@@ -1,0 +1,106 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+Layout = "Master.cshtml";
+}
+
+<section id="main-content" class="container">
+    <div class="row content-wrap">
+        <!-- CONTENT -->
+        <div class="col-sm-8 col-sm-push-4 col-md-9 col-md-push-3 content">
+            <!-- PAGE TITLE -->
+            <h1>Third Way Center News</h1>
+            <!-- BLOG FEED -->
+            <div class="col-ms-12 col-sm-7 module blog-feed">
+                <!-- POSTS -->
+                <div class="posts">
+                    <div class="posts">
+                    @{
+                    var noPosts = true;
+                    var allPosts = Model.Content.Children;
+                    if (Request.QueryString["c"] != null)
+                    {
+                    var articles = allPosts.Where(x => (x.GetPropertyValue
+                    <string>
+                    ("blogPostCategories")).Contains(@Request.QueryString["cn"])).OrderBy("PostDate desc");
+                    foreach(var post in articles){
+                    Html.RenderPartial("_BlogPost",post);
+                    noPosts = false;
+                    }
+                    }
+                    else if (Request.QueryString["s"] != null)
+                    {
+                    var articles = allPosts.Where(x => (x.GetPropertyValue
+                    <string>
+                    ("title")).Contains(@Request.QueryString["s"])).OrderBy("PostDate desc");	
+                    foreach(var post in articles){
+                    Html.RenderPartial("_BlogPost",post);
+                    noPosts = false;
+                    }
+                    }					
+                    else
+                    {
+                    foreach(var post in allPosts.OrderBy("PostDate desc")){
+                    Html.RenderPartial("_BlogPost",post);
+                    noPosts = false;
+                    }
+                    }
+                    if(noPosts == true){
+                    <h2>Sorry, no posts match your search or filter criteria</h2>
+                    <p>Please try a different query.</p>
+                    <h2>Recent Posts</h2>
+                    @Html.Partial("_BlogPostsRecent")
+                    }
+                    }
+                </div>
+                </div>
+            </div>
+            <!-- SOCIAL MEDIA POSTS -->
+            <div class="col-ms-12 col-sm-5 module social-media-posts">
+                <!-- POSTS -->
+                <div class="posts">
+                    <article class="col-xs-12">
+                        <figure class="col-xs-4"><a target="_blank" href="https://www.facebook.com/thirdwaycenter"><img src="/images/icon-fb-thumbnail.jpg" alt="Third Way Center on Facebook"></a></figure>
+                        <div class="col-xs-8 content-text">
+                            <h3><a target="_blank" href="https://www.facebook.com/thirdwaycenter">@Umbraco.Field("facebookHeader")</a></h3>
+                            <p>@Umbraco.Field("facebookContent")</p>
+                            <div class="soc-btn">
+								<div class="fb-like" data-href="http://thirdwaycenter.org/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>	
+							</div>
+                        </div>
+                    </article>
+                    <article class="col-xs-12">
+                        <figure class="col-xs-4"><a target="_blank" href="https://www.linkedin.com/company/third-way-center"><img src="/images/icon-linkedin-thumbnail.jpg" alt="Third Way Center on Linkedin"></a></figure>
+                        <div class="col-xs-8 content-text">
+                            <h3><a target="_blank" href="https://www.linkedin.com/company/third-way-center">@Umbraco.Field("linkedInHeader")</a></h3>
+                            <p>@Umbraco.Field("linkedInContent")</p>
+                            <div class="soc-btn">
+								<script type="IN/FollowCompany" data-id="3711824" data-counter="right"></script>
+							</div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- SIDEBAR -->
+        <aside class="col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9 sidebar">
+        <!-- SIDE NAV -->
+		<div class="module side-nav">                
+            @{ Html.RenderPartial("_BlogCategoriesList");  }  
+        </div>
+		<div class="module th-quotes">
+            @{ Html.RenderPartial("_MyTruth"); }
+        </div>        
+		
+        <!-- END SIDEBAR CONTENT -->
+    </aside>
+    </div>
+    <!-- AFFILIATES -->
+    <div class="visible-ms row affiliates">
+        @{ Html.RenderPartial("_Affiliations");  }
+    </div>
+</section>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#page-wrap").addClass("two-col blogs");	
+	});
+</script> 

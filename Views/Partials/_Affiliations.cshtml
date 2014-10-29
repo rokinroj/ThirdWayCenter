@@ -1,0 +1,19 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+<h2>Accreditations & Affiliations</h2>
+@{
+	var theImages = Umbraco.Content(1478).Children().ToList();  
+	foreach(var theImage in theImages)
+	{
+		var mediaItem = Umbraco.Media(theImage.Image);
+		if(theImage.HasValue("Link"))
+		{
+			<a href="@theImage.Link">
+				<img src="@mediaItem.Url" alt="" />
+			</a>
+		}
+		else
+		{
+			<img src="@mediaItem.Url" alt="" />
+		}
+	}
+}

@@ -1,0 +1,55 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@{
+	Layout = "Master.cshtml";
+}
+<!-- MAIN CONTENT -->
+<section id="main-content" class="container">
+    <div class="row content-wrap">
+        <!-- CONTENT -->
+        <div class="col-sm-8 col-sm-push-4 col-md-9 col-md-push-3 content">
+            <!-- PAGE TITLE -->
+            <h1>@Umbraco.Field("title")</h1>
+            <!-- PAGE CONTENT -->
+            @{
+				var image = Umbraco.TypedMedia(Umbraco.Field("bodyImage").ToString());
+				if(image != null)
+				{
+					<figure class="right"><img src="@image.Url"></figure>
+				}
+            }
+
+            <h2>@Umbraco.Field("subTitle")</h2>
+            @Html.Raw(Umbraco.Field("contentBody"))
+            @RenderSection("PageSpecificControls", false)
+        </div>
+        <!-- SIDEBAR -->
+        <aside class="col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9 sidebar">
+            @{ 
+				if(CurrentPage.leftNavigation.ToString().Contains("Show Left Navigation"))
+				{
+					<!-- SIDE NAV -->
+					<div class="module side-nav">
+						@{ Html.RenderPartial("_LeftNavigation"); } 
+					</div>
+					<!-- END SIDEBAR CONTENT -->
+				}
+            }
+
+            @{ 
+				if(CurrentPage.leftNavigation.ToString().Contains("Show My Truth / My Hope"))
+				{
+					<!-- TRUTH & HOPE QUOTES -->
+					<div class="module th-quotes">
+						@{ Html.RenderPartial("_MyTruth"); }
+					</div>
+					<!-- END TRUTH & HOPE QUOTES -->
+				}
+            }
+        </aside>
+    </div>
+    <!-- AFFILIATES -->
+    <div class="visible-ms row affiliates">
+        @{ Html.RenderPartial("_Affiliations");}
+    </div>
+</section>

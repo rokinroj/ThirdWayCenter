@@ -1,0 +1,28 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@{
+	int number= ViewBag.BlogPostCount;
+	var blogPosts = Umbraco.Content(1072).Children().Take(number);
+	
+	foreach(var post in blogPosts)
+	{
+		<article class="col-xs-12">
+			@if(post.blogPostImage != null)
+			{
+				var imageId = post.postImage;
+				if(!String.IsNullOrWhiteSpace(imageId.ToString()))
+				{
+					<figure class="col-ms-5 col-sm-5"><a href="">
+						<img src="@Umbraco.Media(imageId).Url" />
+					</figure>
+				}
+			}
+
+			<div class="col-ms-7 col-sm-7 col-ms-7 col-sm-7 content-text">
+				<time datetime="@post.UpdateDate">@post.UpdateDate</time>
+				<h4><a href="@post.Url">@post.blogPostSummary</a></h4>
+				<a href="@post.Url" class="btn">Read More</a>
+			</div>
+		</article>
+	}
+}

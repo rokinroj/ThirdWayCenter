@@ -1,0 +1,36 @@
+/* --- Features --- */
+
+.home .features {
+	box-shadow: 0 5px 10px rgba(0,0,0,0.45);
+	.row {}
+	@media (min-width: $break-lg-phone) {
+		@include drop-shadow-img;
+		padding-bottom: 19px;
+		box-shadow: none;
+	}
+	@media (min-width: $break-tablet) {padding-bottom: 24px;}
+	@media (min-width: $break-desktop) {padding-bottom: 29px;}
+}
+
+.features {
+	padding:0;
+	h2 {font-size: 1.5em; margin-bottom: 0;}
+	h3 {
+		font-size: 1.1em;
+		margin: 20px 0 10px;
+		text-align: center;
+	}
+	p {color: $global-blue;}
+}
+
+.feature {
+	background-color: $global-blue;
+	padding: 5px 0;	 
+	text-align: center;
+	a {display: block;}
+	@media (min-width: $break-sm-phone) {
+		padding: 15px 0;
+		a {border-right: 1px solid white;}
+		&:last-child a {border: none;}
+	}
+}

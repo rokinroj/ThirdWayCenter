@@ -1,0 +1,138 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using System.Globalization
+@{
+Layout = "Master.cshtml";
+}
+
+<!-- HOME SLIDER -->
+<div class="slider">
+    <!-- SLIDER WRAP -->
+    <div class="container wrap">
+        <div class="row">
+            <div class="slider-text">
+                <h2>@Html.Raw(Umbraco.Field("sliderText"))</h2>
+            </div>
+            <div class="bxslider-wrap">
+                @{
+					string[] slides = Umbraco.Field("slides").ToString().Split(',');
+					foreach(var slide in slides)
+					{
+					<div>
+						<img src="@Umbraco.Media(slide).Url" alt="">
+					</div>
+					}
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<!-- CONTENT -->
+<section id="main-content" class="container">
+    <!-- FEATURES(Home Buttons) -->
+    <div class="row features">
+        <!-- DONATE BUTTON -->            
+        <div class="col-ms-4 col-sm-4 feature">
+            <a href="/get-involved/donate-now/"><img src="/images/btn-dontate.png"></a>
+        </div>
+        <!-- SUPPORT BUTTON -->            
+        <div class="col-ms-4 col-sm-4 feature">
+            <a href="/get-involved/annual-programs-and-drives/"><img src="/images/btn-support.png"></a>
+        </div>
+        <!-- VOLUNTEER BUTTON -->            
+        <div class="col-ms-4 col-sm-4 feature">
+            <a href="/get-involved/volunteers/"><img src="/images/btn-volunteer.png"></a>
+        </div>
+    </div>
+    <!-- HOME POST CONTENT -->
+    <div class="row home-post-content">
+        <!-- LATEST BLOG POSTS -->
+        <div class="col-sm-6 blog-feed">
+            <h3>@Umbraco.Field("latestPostsHeader")</h3>
+            <div class="posts">				
+                @{ 
+                ViewBag.BlogPostCount = int.Parse(Umbraco.Field("numberOfPosts").ToString());
+                Html.RenderPartial("_HomePageBlogPosts");
+                }
+            </div>
+        </div>
+        <!-- HOME CONNECT -->
+        <div class="col-sm-6 home-connect">
+            <h3>@Umbraco.Field("connectHeader")</h3>
+            <!-- VIDEO -->
+            <div class="video">
+                <h4>@Umbraco.Field("connectSubHeader")</h4>
+                <div class="video-player">
+                    @Umbraco.Field("connectVideo")
+                </div>
+            </div>
+            <!-- SOCIAL MEDIAL POSTS -->
+            <div class="social-media-posts">
+                <div class="posts">
+                    <article class="col-xs-12">
+                        <figure class="col-xs-4"><a target="_blank" href="https://www.facebook.com/thirdwaycenter"><img src="/images/icon-fb-thumbnail.jpg" alt="Third Way Center on Facebook"></a></figure>
+                        <div class="col-xs-8 content-text">
+                            <h3><a target="_blank" href="https://www.facebook.com/thirdwaycenter">@Umbraco.Field("facebookHeader")</a></h3>
+                            <p>@Umbraco.Field("facebookContent")</p>
+                            <div class="soc-btn" style="right:-16px">
+								<div class="fb-like" data-href="http://thirdwaycenter.org/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+							</div>
+                        </div>
+                    </article>
+                    <article class="col-xs-12">
+                        <figure class="col-xs-4"><a target="_blank" href="https://www.linkedin.com/company/third-way-center"><img src="/images/icon-linkedin-thumbnail.jpg" alt="Third Way Center on Linkedin"></a></figure>
+                        <div class="col-xs-8 content-text">
+                            <h3><a target="_blank" href="https://www.linkedin.com/company/third-way-center">@Umbraco.Field("linkedinHeader")</a></h3>
+                            <p>@Umbraco.Field("linkedinContent")</p>
+                            <div class="soc-btn" style="right:-20px">
+								<script type="IN/FollowCompany" data-id="3711824" data-counter="right"></script>
+							</div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TWC IMPACT STATS -->
+    <div class="visible-ms row impact-stats">
+        <h3>@Umbraco.Field("impactStatisticsHeader")</h3>
+        <div class="col-ms-4 col-sm-4 col-md-2 stat-block">
+            <img src="/images/img-impact-teens.jpg">
+            <div class="impact-number">@int.Parse(Umbraco.Field("teensServed").ToString()).ToString("N0",CultureInfo.InvariantCulture)</div>
+            <p>Teens Served</p>
+        </div>
+        <div class="col-ms-4 col-sm-4 col-md-2 stat-block">
+            <img src="/images/img-impact-teen-mothers.jpg" alt="">
+            <div class="impact-number">@int.Parse(Umbraco.Field("teenMothersWithTheirBabies").ToString()).ToString("N0",CultureInfo.InvariantCulture)</div>
+            <p>Teen Mothers with Their Babies</p>
+        </div>
+        <div class="col-ms-4 col-sm-4 col-md-2 stat-block">
+            <img src="/images/img-impact-graduated.jpg" alt="">
+            <div class="impact-number">@int.Parse(Umbraco.Field("teensGraduated").ToString()).ToString("N0",CultureInfo.InvariantCulture)</div>
+            <p>Teens Graduated wih a Diploma or GED</p>
+        </div>
+        <div class="col-ms-4 col-sm-4 col-md-2 stat-block">
+            <img src="/images/img-impact-individual-therapy.jpg" alt="">
+            <div class="impact-number">@int.Parse(Umbraco.Field("individualTherapySessions").ToString()).ToString("N0",CultureInfo.InvariantCulture)</div>
+            <p>Individual Therapy Sessions</p>
+        </div>
+        <div class="col-ms-4 col-sm-4 col-md-2 stat-block">
+            <img src="/images/img-impact-family-therapy.jpg" alt="">
+            <div class="impact-number">@int.Parse(Umbraco.Field("familyTherapySessions").ToString()).ToString("N0",CultureInfo.InvariantCulture)</div>
+            <p>Family Therapy Sessions</p>
+        </div>
+        <div class="col-ms-4 col-sm-4 col-md-2 stat-block">
+            <img src="/images/img-impact-group-therapy.jpg" alt="">
+            <div class="impact-number">@int.Parse(Umbraco.Field("groupTherapySessions").ToString()).ToString("N0",CultureInfo.InvariantCulture)</div>
+            <p>Group Therapy Sessions</p>
+        </div>
+    </div>
+    <!-- AFFILIATES -->
+    <div class="visible-ms row affiliates">
+        @{ Html.RenderPartial("_Affiliations");  }
+    </div>
+</section>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#page-wrap").addClass("home");	
+	});
+</script> 

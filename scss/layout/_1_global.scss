@@ -1,0 +1,111 @@
+/*---------------- Global Styles  --------------------*/
+
+html {
+	min-height: 100%;
+	overflow-y: scroll;	
+	position: relative;
+}
+
+body {
+	background: none;
+	color: $body-color;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+}
+
+/* --- Typography --- */
+
+h1, h2, h3, h4, h5, h6, .sub-page-title {
+	color: $global-blue;
+	font-weight: bold;
+	letter-spacing: 0;
+	margin: 0 0 10px;
+	-ms-word-break: break-word;
+	word-break:break-word;
+	//text-align: center;
+	//@include title-left;
+}
+
+p, ol, ul {
+	font-weight: normal; 
+	text-transform: none;
+}
+
+/* --- Custom Type Styles  --- */
+
+h1, h2, h3 {font-family: $RobotoSlab;}
+
+h1 {
+	font-size: 1.8em;
+	margin-bottom: 1.1em;
+}
+
+h2 {font-size: 24px;}
+
+h3 {font-size: 20px;}
+
+p {
+	font-size: 1em;
+	@media (min-width: $break-lg-phone) {font-size: 1.125em;}
+}
+
+h4 {}
+
+/* --- Layout --- */
+
+.container {
+	/*max-width: 1100px; 
+	width: 100%;*/
+	transition:opacity 0.3s ease-in-out;
+}
+
+.row {margin-bottom: 2em;}
+
+/* --- Content --- */
+
+figure {
+	display: block;
+	float: none;
+	margin: 15px auto;
+	text-align: center;
+	@media (min-width: $break-sm-phone) {
+		&.left {
+			float: left;
+			margin: 0 15px 10px 0;
+			width: 28%;
+		}
+		&.right {
+			float: right;
+			margin: 0 0 10px 15px;
+			width: 28%;
+		}			
+	}
+	@media (min-width: $break-lg-phone) {
+		margin: 0;
+		&.left, &.right {width: 37%;}
+	}
+	@media (min-width: $break-tablet) {
+		&.left, &.right {width: 50%;}
+	}
+	@media (min-width: $break-desktop) {
+		&.left, &.right {width: auto;}
+	}
+}
+
+/* --- Helpers --- */
+
+.video-player {
+	position:relative;
+	height:0;
+	padding-bottom: 56.25% !important;
+	width:100%;
+	iframe {
+		display: inline-block;
+		position:absolute;
+		margin: 0;
+		height:100%;
+		width:100%;
+		top:0;
+		left:0;
+	}
+}

@@ -1,0 +1,120 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+      <!-- MAIN CONTENT -->
+      <section id="main-content" class="container">
+        <!-- CONTENT WRAP -->
+        <div class="row content-wrap">
+          <!-- CONTENT -->
+          <div class="col-sm-8 col-sm-push-4 col-md-9 col-md-push-3 content">
+            <!-- PAGE TITLE -->
+            <h1>True Grit 2014 Annual Event</h1>
+            <!-- EVENT -->
+            <div class="module event">
+              <!-- EVENT HEADER -->            	
+              <div class="col-xs-12 event-header">
+                <!-- EVENT TITLE -->
+                <div class="col-sm-12 col-md-5 event-title">
+                  <h2>Help Third Way Center Help Traumatized Teens by attending our annual True Grit Fundraising Event</h2>
+                  <!-- EVENT DETAILS -->
+                  <div class="event-detail-block">
+                    <div class="header">Event Details</div>
+                    <!-- DATE & TIME -->
+                    <p>Saturday November 1, 2014 |  6-11pm</p>
+                    <!-- LOCATION -->
+                    <p>Seawell Grand Ballroom at the Denver Center for Performing Arts</p>
+                    <!-- DETAILS -->
+                    <p>Western themed fun! Dinner, open bar, entertainment and more!</p>
+                  </div>
+                </div>
+                <!-- PHOTO GALLERY -->
+                <div class="col-sm-12 col-md-7 gallery photo">
+					<a class="fancybox" href="/media/1041/001_2013-thirdway-staver.jpg" rel="gallery1">
+                  		<img src="/media/1076/img-gallery-placeholder.jpg" alt="img-gallery-placeholder">
+					</a>
+                </div>
+              </div>
+              <!-- TICKET INFO -->
+              <div class="ticket-info">
+                <button type="submit" class="btn-primary">Buy Tickets</button>
+                <h2>Please RSVP by October 26th</h2>
+                <h3>Ticket and Sponsorship Information</h3>
+                <ul>
+                  <li>Individual<span class="price">$125</span></li>
+                  <li>Table of 10<span class="price">$1,000</span></li>
+                  <li>Patron Ticket<span class="price">$500</span></li>
+                  <li>"Flush" Sponsor<span class="price">$2,500*</span></li>
+                  <li>"Full House" Sponsor<span class="price">$5,000*</span></li>
+                  <li>"Four of a Kind" Sponsor<span class="price">$10,000*</span></li>
+                  <p>*Includes VIP Reception</p>
+                </ul>
+              </div>
+              <!-- SCHEDULE -->
+              <div class="schedule">
+                <h3>Schedule</h3>
+                <ul>
+                  <li>6:00 - Cocktails& Silent Auction</li>
+                  <li>7:15 - Dinner</li>
+                  <li>7:45 – Program: Presentation of the Hildegard Messenbaugh Award, Video Presentation, Live Auction</li>
+                  <li>9:00 – Dancing to the Music of Chris Daniels & the Kings</li>
+                </ul>
+              </div>
+              <h3>Honorary Co-Chairs: Peter & Marilyn Coors</h3>
+              <h3>Special Presentation of the Hildegard Messenbaugh Award Honoring Jeannie Ritter</h3>
+              <!-- BOARD OF DIRECTIORS -->
+              <div class="BOD">
+                <h3>Board of Directors</h3>
+                <p>William Matthews, President • Robert Fanch, Treasurer • David Eisner • Gary A. Gray • Kerri Greenberg • Adrienne Greene • Sally Johnston • Matthew McCormick • Hildegard Messenbaugh, MD • Wagner Schorr, MD</p>
+              </div>
+            </div>
+          </div>
+		<!-- SIDEBAR -->
+        <aside class="col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9 sidebar">
+            @{ 
+            if(CurrentPage.leftNavigation.ToString().Contains("Show Left Navigation"))
+            {
+            <!-- SIDE NAV -->
+            <div class="module side-nav">
+				@{ Html.RenderPartial("_LeftNavigation"); } 
+            </div>
+            <!-- END SIDEBAR CONTENT -->
+            }
+            }
+            @{ 
+            if(CurrentPage.leftNavigation.ToString().Contains("Show My Truth / My Hope"))
+            {
+            <!-- TRUTH & HOPE QUOTES -->
+            <div class="module th-quotes">
+                @{ Html.RenderPartial("_MyTruth"); }
+            </div>
+            <!-- END TRUTH & HOPE QUOTES -->
+            }
+            }
+        </aside>
+        </div>
+        <!-- AFFILIATES -->
+    <div class="visible-ms row affiliates">
+        @{ Html.RenderPartial("_Affiliations");  }
+    </div>
+      </section>
+<div class="hidden">
+
+<a class="fancybox" href="/media/1033/024_2013-thirdway-staver.jpg" rel="gallery1"></a>
+<a class="fancybox" href="/media/1034/042_2013-thirdway-staver.jpg" rel="gallery1"></a>
+<a class="fancybox" href="/media/1035/043_2013-thirdway-staver.jpg" rel="gallery1"></a>
+<a class="fancybox" href="/media/1039/058_2013-thirdway-staver.jpg" rel="gallery1"></a>
+<a class="fancybox" href="/media/1036/061_2013-thirdway-staver.jpg" rel="gallery1"></a>
+<a class="fancybox" href="/media/1037/065_2013-thirdway-staver.jpg" rel="gallery1"></a>
+<a class="fancybox" href="/media/1049/067_2013-thirdway-staver.jpg" rel="gallery1"></a>
+<a class="fancybox" href="/media/1050/069_2013-thirdway-staver.jpg" rel="gallery1"></a>
+<a class="fancybox" href="/media/1038/075_2013-thirdway-staver.jpg" rel="gallery1"></a>
+<a class="fancybox" href="/media/1040/078_2013-thirdway-staver.jpg" rel="gallery1"></a>
+<a class="fancybox" href="/media/1042/087_2013-thirdway-staver.jpg" rel="gallery1"></a>
+<a class="fancybox" href="/media/1048/095_2013-thirdway-staver.jpg" rel="gallery1"></a>
+<a class="fancybox" href="/media/1043/112_2013-thirdway-staver.jpg" rel="gallery1"></a>
+<a class="fancybox" href="/media/1047/126_2013-thirdway-staver.jpg" rel="gallery1"></a>
+<a class="fancybox" href="/media/1045/128_2013-thirdway-staver.jpg" rel="gallery1"></a>
+<a class="fancybox" href="/media/1044/131_2013-thirdway-staver.jpg" rel="gallery1"></a>
+<a class="fancybox" href="/media/1046/139_2013-thirdway-staver.jpg" rel="gallery1"></a>
+</div>

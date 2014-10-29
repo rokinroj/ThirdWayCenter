@@ -1,0 +1,30 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+Layout = "AWebpage.cshtml";
+}
+@section PageSpecificControls{
+<!-- PAGE TITLE -->
+<!-- BLOG FEED -->
+<div class="module success-stories">
+    <!-- POSTS -->
+    <div class="posts">
+        @{
+        var allStories = CurrentPage.Children.ToList();
+        foreach(var story in allStories)
+        {
+        <!-- POST -->
+        <article>
+            <h3>@story.Title</h3>
+            <p>@story.successStorySummary</p>
+            <a href="@story.Url" class="btn">Read @story.firstNameOfStoryOwner's Full Story</a>
+        </article>
+        }
+        }
+    </div>
+</div>
+}
+<script type="text/javascript">
+    $(document).ready(function() {
+    	$("#page-wrap").addClass("two-col");	
+    });
+</script>

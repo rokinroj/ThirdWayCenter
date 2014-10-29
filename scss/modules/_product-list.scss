@@ -1,0 +1,50 @@
+/* --- Product List --- */
+
+.product-list {
+	.product {@include posts-block;}
+	figure, .content-text {padding: 0;}
+	figure {text-align: left;}	
+	.price {
+		color: $global-orange;
+		font: 700 48px $RobotoSlab;
+		margin-bottom: 20px;
+	}
+	.title {
+		margin-bottom: 15px;
+		span {
+			display: block;
+			font: bold 18px $Helvetica;	
+		}
+	}
+	h3 {margin-bottom: 15px;}
+	ul {
+		padding-left: 25px;
+		li {margin-bottom: 15px;}
+	}
+	@media (min-width: $break-lg-phone) {
+		.product {
+			margin-bottom: 60px;
+			padding-bottom: 30px;
+		}
+		.price {
+			line-height: 38px;
+			margin-bottom: 30px;
+		}
+		figure {
+			position: absolute;
+			left: 0;
+			width: 150px;
+		}
+		.content-text {
+			padding-left: 175px;
+			width: 100%;
+		}
+		.btn-primary {
+			margin: 20px 0 40px;
+		}
+	}
+	@media (min-width: $break-tablet) {
+		figure {width: 260px;}
+		.content-text {padding-left: 290px;}
+	}
+}

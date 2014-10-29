@@ -1,0 +1,41 @@
+/* --- Content Item --- */
+
+.content {
+	.title {
+			margin-bottom: 15px;
+			span {
+				display: block;
+				font: bold 18px $Helvetica;	
+			}
+		}
+	ol {
+		color: $global-blue;
+		font-weight: bold;
+		li span {
+			color: $body-color;
+			font-size: 1.125em;
+			font-weight: normal;
+		}
+	}
+	
+	ul {
+		list-style-type: none;
+		padding-left: 25px;
+		li:before {
+			color: $global-blue;
+			font-family: $FontAwesome;			
+			content:"";
+			margin-left: -20px;
+			padding-right: 14px;
+		}
+	}
+	
+	li {
+		margin-bottom: 1.5em;
+		a,strong {color: $global-blue;}
+	}
+	.sub-page-title {
+		font-size: 1.1em;
+		margin-bottom: 1.1em;
+	}
+}

@@ -1,0 +1,30 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	//var allPosts = Model.Content.Children;
+	var allPosts = Umbraco.Content(1072).Children();
+	
+	string allUsedCategories = string.Empty;
+	
+	// Get all the categories that are in use on any blog post
+	foreach(var post in allPosts)
+	{
+		var categories = (post.GetPropertyValue<string>("blogPostCategories")).Split(new char[] {','});
+		
+		foreach(var cat in categories)
+		{
+			if(!allUsedCategories.Contains(cat))
+			{
+				allUsedCategories += cat +" ";
+			}
+		}			
+	}
+}
+
+<p class="title">Popular Topics</p>
+<nav>
+@foreach(var catId in allUsedCategories.Trim().Split(null))
+{
+	var cat = Umbraco.Content(catId);
+	<a href="/twc-news?c=@cat.categoryName&cn=@cat.Id">@cat.categoryName</a> 
+}
+</nav>

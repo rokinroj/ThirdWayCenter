@@ -1,0 +1,21 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "AWebpage.cshtml";
+}
+
+@section PageSpecificControls{
+	@{
+		var allDocs = CurrentPage.Children();
+		
+		foreach(var doc in allDocs)
+		{
+			<div class="row">
+				<a target="_blank" href="@Umbraco.Media(doc.file).Url">
+					<img width="50" src="@Umbraco.Media(doc.documentThumbnailImage).Url" />
+					<span>@doc.friendlyName</span>
+				</a>
+			</div>
+			
+		}
+	}
+}

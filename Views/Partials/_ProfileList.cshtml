@@ -1,0 +1,45 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@{
+	var allDirecotrProfiles = CurrentPage.Children().Where("memberType == 62");
+	var allAdvisoryProfiles = CurrentPage.Children().Where("memberType == 63");
+	
+	<p><h2>BOARD OF DIRECTORS</h2></p>
+	
+	<div class="module bios">
+		<!-- POSTS -->
+		<div class="posts">
+		@foreach(var profile in allDirecotrProfiles)
+		{			
+			<article>
+			@if (profile.GetProperty("profileImage") != null)
+			{
+				var imageId = @profile.profileImage;
+				<figure><img src="@Umbraco.Media(@profile.profileImage).Url" /></figure>
+			}
+			<h2 class="title">@profile.profileTitle<span>@profile.profileSubTitle</span></h2>
+			@profile.profileBody
+			</article>				
+		}
+		</div>
+	</div>
+			
+	<p><h2>ADVISORY BOARD</h2></p>
+	<div class="module bios">
+		<!-- POSTS -->
+		<div class="posts">
+		@foreach(var profile in allAdvisoryProfiles)
+		{			
+			<article>
+			@if (profile.GetProperty("profileImage") != null)
+			{
+				var imageId = @profile.profileImage;
+				<figure><img src="@Umbraco.Media(@profile.profileImage).Url" /></figure>
+			}
+			<h2 class="title">@profile.profileTitle<span>@profile.profileSubTitle</span></h2>
+			@profile.profileBody
+			</article>				
+		}
+		</div>
+	</div>
+}

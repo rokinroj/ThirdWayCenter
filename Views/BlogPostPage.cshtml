@@ -1,0 +1,52 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = "Master.cshtml";
+}
+<section id="main-content" class="container">
+    <div class="row content-wrap">
+        <!-- CONTENT -->
+        <div class="col-sm-8 col-sm-push-4 col-md-9 col-md-push-3 content">
+
+            <h1>Third Way Center News</h1>			
+			<a class="btn back-page" href="/twc-news">back</a>
+			<h2>@CurrentPage.blogPostTitle</h2>
+			<!-- BLOG DETAIL -->
+			<div class="module blog-detail">
+				<!-- ARTICLE -->
+				<div class="posts">
+					<article>
+						@if(CurrentPage.GetPropertyValue("postImage") != null)
+						{		
+							var imageId = CurrentPage.postImage;
+							if(!String.IsNullOrWhiteSpace(imageId.ToString()))
+							{
+								<figure class="right">
+									<img src="@Umbraco.Media(imageId).Url">
+								</figure>
+							}
+						}					
+						<time xsi:type="xsd:date" datetime="@CurrentPage.PostDate.ToShortDateString()">@CurrentPage.PostDate.ToShortDateString()</time>
+						@CurrentPage.blogPostContent
+					</article>
+				</div>
+			</div>
+        </div>
+        <!-- SIDEBAR -->
+        <aside class="col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9 sidebar">
+            <!-- SIDE NAV -->
+            <div class="module side-nav">                
+				@{ Html.RenderPartial("_BlogCategoriesList");  }  
+			</div>
+            <!-- TRUTH & HOPE QUOTES -->
+            <div class="module th-quotes">
+                @{ Html.RenderPartial("_MyTruth"); }
+            </div>
+            <!-- END TRUTH & HOPE QUOTES -->
+		<!-- END SIDEBAR CONTENT -->
+        </aside>
+    </div>
+    <!-- AFFILIATES -->
+    <div class="visible-ms row affiliates">
+        @{ Html.RenderPartial("_Affiliations");  }
+    </div>
+</section>

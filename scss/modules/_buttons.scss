@@ -1,0 +1,51 @@
+/* --- General Button --- */
+
+.btn {
+	background: url(../images/btn-arrow.jpg) no-repeat left center;
+	color: #505050;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 0;
+	padding:0 0 0 25px;
+	text-align: left;
+	text-transform: uppercase;
+	white-space: normal;
+}
+
+.btn.back-page {
+	@extend .btn;
+	background: url(../images/btn-arrow-back.jpg) no-repeat left center;
+	margin-bottom: 25px; 
+}
+
+/* --- Orange Button --- */
+
+.btn-primary {
+	background: #d67328;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#d67328), to(#f4971e));
+  background: -webkit-linear-gradient(#d67328 0%, #f4971e 100%);
+  background: -moz-linear-gradient(#d67328 0%, #f4971e 100%);
+  background: -o-linear-gradient(#d67328 0%, #f4971e 100%);
+  background: linear-gradient(#d67328 0%, #f4971e 100%);
+  border: 1px solid #d67328;
+  color: white;
+  font: 700 24px $RobotoSlab;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  padding: 4px 50px;
+  text-align: center;
+  text-transform: uppercase; 
+	border-radius: 8px;
+	box-shadow: 0 0 2px 1px rgba(255,255,255,0.5) inset;
+	transition: background 0.3s ease;	
+}
+
+.btn-primary:hover {
+	background: #f4971e;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#f4971e), to(#d67328));
+  background: -webkit-linear-gradient(#f4971e 0%, #d67328 100%);
+  background: -moz-linear-gradient(#f4971e 0%, #d67328 100%);
+  background: -o-linear-gradient(#f4971e 0%, #d67328 100%);
+  background: linear-gradient(#f4971e 0%, #d67328 100%);
+	border: 1px solid #d67328;
+}

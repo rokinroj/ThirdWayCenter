@@ -1,0 +1,31 @@
+/* --- Impact Stats --- */
+
+.impact-stats {
+	text-align: center;
+	h2 {text-align: center;}
+	.stat-block {
+		margin-bottom: 20px;
+		@media (min-width: $break-tablet) {
+			margin-bottom: 0;
+			img {
+				height: 129px;
+				width: auto;
+			}
+			&:nth-of-type(5), &:nth-of-type(6) {padding: 0 5px;}
+		}
+	}
+	.impact-number {
+		color: $global-blue;
+		font-size: 38px;
+		font-weight: bold;
+		line-height: 38px;
+		margin: 5px 0 10px;
+	}
+	p {
+		color: #999;
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 20px;
+		margin: 0;
+	}
+}

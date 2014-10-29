@@ -1,0 +1,72 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	var footer = Umbraco.Content(1095);
+}
+<div class="container">
+    <div class="row">
+        <!-- FOOTER LOGO -->
+        <div class="col-sm-3 footer-contact">
+            <figure><img src="/images/logo-footer.jpg" alt="Third Way Center"></figure>
+            <address>@footer.address</address>
+            <a href="tel:@footer.phoneNumber">@footer.phoneNumber</a>
+            <!-- SOC NET ICONS -->
+            <div class="soc-net-icons">
+                <a href=""><img src="/images/icon-fb.png" alt="Third Way Center on Facebook"></a>
+                <a href=""><img src="/images/icon-linkedin.png" alt="Third Way Center on Linkedin"></a>
+                <a href=""><img src="/images/icon-youtube.png" alt="Third Way Center on YouTube"></a> 
+                <p class="copy"><a href="http://www.381design.com/">Website by 381 Design</a></p>
+            </div>
+        </div>
+        <!-- NAV -->					
+        <div class="col-sm-3 footer-nav">
+            <h4>@footer.col1Header</h4>
+			<nav role="navigation">
+				@{
+					var ids = footer.col1QuickLinks.Split(',');
+					foreach (var id in ids)
+					{
+						var node = Umbraco.Content(id);
+						if (node.Id != 0)
+						{
+							<a href="@node.Url">@node.Name.Replace("<br>","")</a>
+						}
+					}
+				}
+			</nav>
+        </div>
+        <!-- NAV -->
+        <div class="col-sm-3 footer-nav">
+            <h4>@footer.col2Header</h4>
+            <nav role="navigation">
+				@{
+					var ids2 = footer.col2QuickLinks.Split(',');
+					foreach (var id in ids2)
+					{
+						var node = Umbraco.Content(id);
+						if (node.Id != 0)
+						{
+							<a href="@node.Url">@node.Name.Replace("<br>","")</a>
+						}
+					}
+				}
+			</nav>
+        </div>
+        <!-- NAV -->
+        <div class="col-sm-3 footer-nav">
+            <h4>@footer.col3Header</h4>
+            <nav role="navigation">
+				@{
+					var ids3 = footer.col3QuickLinks.Split(',');
+					foreach (var id in ids3)
+					{
+						var node = Umbraco.Content(id);
+						if (node.Id != 0)
+						{
+							<a href="@node.Url">@node.Name.Replace("<br>","")</a>
+						}
+					}
+				}
+			</nav>
+        </div>
+    </div>
+</div>

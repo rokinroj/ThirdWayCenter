@@ -1,0 +1,11 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "AWebpage.cshtml";
+}
+
+@section PageSpecificControls{
+    <!-- PAGE TITLE -->
+	<a class="btn back-page" onclick="goBack()">back</a>
+	<p>@CurrentPage.successStorySummary</p>
+    @CurrentPage.bodyText
+}

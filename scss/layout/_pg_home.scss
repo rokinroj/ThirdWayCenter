@@ -1,0 +1,60 @@
+/* --- Home Page Styles --- */
+
+.home {
+		
+}
+
+/* --- Home Post Content --- */
+
+.home-post-content {
+	padding-bottom: 20px;
+	h2 {		
+		font-size: 22px;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+	}
+	h4 {text-align: left;}
+	.blog-feed, .social-media-posts {padding: 0 15px;}
+	.home-connect {
+		.video {
+			border-bottom: 1px solid #acacac;
+			display: inline-block;
+			margin-bottom: 25px;
+			padding-bottom: 25px;
+		}
+	}	
+	@media (min-width: $break-sm-phone) {
+		border-bottom: 1px solid #acacac;
+		h2 {
+			font-size: 24px;
+			text-align: left;
+		}
+		.blog-feed article {
+			min-height: 165px;
+		}
+	}
+	@media (min-width: $break-lg-phone) and (max-width: $break-tablet) {
+		article {
+			&:last-child {
+				border: none;
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+	@media (min-width: $break-lg-phone) {
+		padding-bottom: 40px;
+		.posts {
+			border-right: 1px solid #acacac;
+			padding-right: 15px;
+		}
+		.social-media-posts {
+			.posts {
+				border: none;
+				padding-right: 0;
+			}
+		}
+		h2 {margin-bottom: 40px;}
+		.video {margin-bottom: 25px;}
+	}	
+}

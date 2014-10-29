@@ -1,0 +1,223 @@
+
+// Media Queries
+
+$grid-gutter-width: 30px; // Gutters
+
+$grid-columns: 12; // Columns
+
+$break-tiny-phone: 19.938em; // 319px 
+
+$break-sm-phone: 30em; // 480px 
+
+$break-sm-tween: 37.5em; // 600px
+
+$break-lg-phone: 48em; // 768px 
+
+$break-tablet: 62em; // 992px 
+
+$break-desktop: 75em; // 1170px
+
+// Base Colors
+
+$header-color: red;
+
+$warning-red: #a02626;
+
+$global-grey: #a7a9ac;
+
+$global-blue: #226BBE;
+
+$global-orange: #cd5a13;
+
+$body-color: #6f6f6f;
+
+@mixin btn-orange {
+	background: rgb(208,110,36);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(208,110,36,1)), to(rgba(244,151,30,1)));
+	background: -webkit-linear-gradient(rgba(208,110,36,1) 0%, rgba(244,151,30,1) 100%);
+	background: -moz-linear-gradient(rgba(208,110,36,1) 0%, rgba(244,151,30,1) 100%);
+	background: -o-linear-gradient(rgba(208,110,36,1) 0%, rgba(244,151,30,1) 100%);
+	background: linear-gradient(rgba(208,110,36,1) 0%, rgba(244,151,30,1) 100%);
+	border: 1px solid white;
+	color: white;
+	padding: 3px 10px;
+	text-transform: uppercase;
+	border-radius: 2px;
+}
+
+@mixin btn-orange-hover {
+	background: rgb(244,151,30);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(244,151,30,1)), to(rgba(208,110,36,1)));
+	background: -webkit-linear-gradient(rgba(244,151,30,1) 0%, rgba(208,110,36,1) 100%);
+	background: -moz-linear-gradient(rgba(244,151,30,1) 0%, rgba(208,110,36,1) 100%);
+	background: -o-linear-gradient(rgba(244,151,30,1) 0%, rgba(208,110,36,1) 100%);
+	background: linear-gradient(rgba(244,151,30,1) 0%, rgba(208,110,36,1) 100%);
+	text-decoration: none;
+}
+
+@mixin posts-block {
+	border-bottom: 1px solid #acacac;
+	float: left;
+	margin-bottom: 1.75em;
+	padding: 0 0 1.75em;
+	text-align: left;
+	width: 100%;
+	@media (min-width: $break-tablet) {				
+		&:last-child {
+			border-bottom: none;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+}
+
+// Font Stacks
+
+$Helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$Arial: Arial, 'Helvetica Neue', Helvetica,  sans-serif;
+
+$RobotoSlab: 'Roboto Slab', serif;
+
+$AD: 'Architects Daughter', cursive;
+
+$FontAwesome: 'FontAwesome';
+
+// Helpers
+
+@mixin opacity-50 {
+	filter:alpha(opacity=50);
+	opacity: 0.5;	
+}
+
+@mixin title-left {@media (min-width: $break-lg-phone) {text-align: left;}}
+
+@mixin reg-mark {
+	font-size:9px; 
+	vertical-align:text-top;
+}
+
+@mixin drop-shadow-img {
+	background: url(../images/img-drop-shadow-lg.jpg) no-repeat left bottom;
+	background-size: 100%;
+}
+
+%intro {
+	color: $global-blue;
+	font-size: 1.5em;
+}
+
+%sm {width: 25%;}
+
+%md {width: 35%;}
+
+%lg {width: 50%;}
+
+%left {
+	float: left;
+	margin-right: 15px;
+}
+
+%right {
+	float: right;
+	margin-left: 15px;
+}
+
+// Text Shadow
+
+$ts-blk: 0 1px 0 rgba(0,0,0,0.35);
+
+$ts-wht: 1px 1px 0 rgba(255,255,255,0.5);
+
+// Responsive Utilities
+
+.visible-tiny {
+	@media (min-width: $break-tiny-phone) {display: none !important;}		
+}
+
+.hidden-tiny {
+	display: none !important;
+	@media (min-width: $break-tiny-phone) {display: block !important;}		
+}
+
+.hidden-ms {
+	@media (min-width: $break-sm-phone) {display: none !important;}		
+}
+
+.visible-ms {
+	display: none !important;
+	@media (min-width: $break-sm-phone) {display: block !important;}		
+}
+
+@media (max-width: 479px) {
+  .hidden-ms {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
+
+// Clearfix & Clear Style
+
+%clearfix {
+  &:before, &:after {content: ""; display: table;}
+  &:after {clear: both;}
+}
+
+%clear-style-nav-first {
+	&:first-child {
+		border-left: none;
+		margin-left: 0;
+		padding-left: 0;
+	}
+}
+
+%clear-style-nav-last {
+	&:last-child {
+		border-right: none;
+		margin-right: 0;
+		padding-right: 0;
+	}
+}
+
+// mobile marker
+/*
+
+@media (min-width: 319px) and (max-width:321px) {
+	#page-wrap:after {
+		background: rgba(0,0,0,0.2);
+		color: black;
+		content: "320px";
+		font-size: 12px;
+		font-weight: bold;
+		position: fixed;
+		padding: 0 5px 1px;
+		opacity: 0.5;
+		text-align: center;
+		text-shadow: $ts-blk;
+		top:0;
+		right: 0;
+		width: 100%;
+		z-index: 10000;
+	}
+}
+*/
+	

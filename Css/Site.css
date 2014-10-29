@@ -1,0 +1,247 @@
+.side-nav nav a {
+line-height: 1.3em;
+	margin-bottom:12px;
+}
+
+.contact-form .row{
+	margin-bottom:0;
+}
+
+.contact-form input,
+.contact-form textarea{
+	padding:5px;
+	border:1px solid gray;
+	width:75%;
+}
+				
+#main-content > div.row.content-wrap > div > div.form-box > form > fieldset > div:nth-child(5)
+{
+	display:none;
+}
+					
+#cultivcontactformsubmit{
+	margin-top:20px;
+}
+
+.fb_iframe_widget{
+	margin-bottom:20px;
+}
+
+.login-wrapper form{
+	margin:auto;
+}
+
+.login {
+  position: relative;
+  margin: 30px auto;
+  padding: 20px 20px 20px;
+  width: 310px;
+  background: white;
+  border-radius: 3px;
+}
+
+.login:before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  z-index: -1;
+}
+
+.login h1 {
+  margin: -20px -20px 21px;
+  line-height: 40px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #9EACB2;
+  text-align: center;
+  text-shadow: 0 1px white;
+  border-radius: 3px 3px 0 0;
+  background-image: -webkit-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: -moz-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: -o-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: linear-gradient(to bottom, whiteffd, #eef2f5);
+  -webkit-box-shadow: 0 1px whitesmoke;
+  box-shadow: 0 1px whitesmoke;
+}
+
+.login p {
+  margin: 20px 0 0;
+}
+
+.login p:first-child {
+  margin-top: 0;
+}
+
+.login input[type=text], .login input[type=password] {
+  width: 278px;
+}
+
+.login p.remember_me {
+  float: left;
+  margin-left: 20px;
+  line-height: 42px;
+}
+
+.login p.remember_me label {
+  font-size: 12px;
+  color: #9EACB2;
+  cursor: pointer;
+}
+
+.login p.remember_me input {
+  position: relative;
+  bottom: 1px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.login p.submit {
+  text-align: right;
+}
+
+.login-help {
+  margin: 20px 0;
+  font-size: 11px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px #2a85a1;
+}
+
+.login-help a {
+  color: #cce7fa;
+  text-decoration: none;
+}
+
+.login-help a:hover {
+  text-decoration: underline;
+}
+
+:-moz-placeholder {
+  color: #9EACB2 !important;
+  font-size: 13px;
+}
+
+::-webkit-input-placeholder {
+  color: #B6BEC1;
+  font-size: 13px;
+}
+
+.login-wrapper input {
+  font-family: 'MONTSERRAT', Tahoma, Verdana, sans-serif;
+  font-size: 12px;
+}
+
+.login-wrapper input[type=text], input[type=password] {
+  margin: 4px;
+  padding: 0 10px;
+  width: 200px;
+  height: 46px;
+  color: #404040;
+  background: white;
+  border: 2px solid;
+  border-color: #9EACB2;
+  border-radius: 4px;
+  
+}
+
+.login-wrapper input[type=text]:focus, input[type=password]:focus {
+  border-color: #6EC3C7;
+  outline-color: #6EC3C7;
+  outline-offset: 2;
+}
+
+.login-wrapper input[type=submit] {
+  padding: 0 40px;
+  height: 46px;
+  font-size: 12px;
+  color: #fff;
+  text-shadow: none;
+  background: #00B87F;
+  border: 1px solid;
+  border-color: #07A06D;
+  border-radius: 4px;
+}
+
+.login-wrapper input[type=submit]:active {
+  background: #07A06D;
+}
+
+.login-wrapper input[type=submit]:hover {
+  background: #07A06D;
+}
+
+
+.lt-ie9 input[type=text], .lt-ie9 input[type=password] {
+  line-height: 34px
+}
+	
+.blogs h1 {
+	text-transform: none!important;
+}
+
+.blog-post-link h4 a{
+	background:none;
+	color:#226BBE;
+	padding-left: 0px;
+}
+		
+h4 a:hover{
+	color: #cd5a13!important;
+}
+
+.navbar-nav .active{
+	color: #cd5a13!important;
+}
+
+.content li{
+	font-size: 1.125em;
+}
+
+.last{
+	border:none!important;
+}
+
+.contact-list{
+	margin: 40px 0;
+}
+.contact-list table td{
+	border-bottom:solid 1px #E2E2E2;
+	padding:5px 0px;
+}
+
+.footer-nav nav a{
+	color:white;
+}
+
+.footer-nav nav a:hover{
+	color: #bbbbbb!important;
+}
+	
+.footer-nav h4{
+	color:white;
+}
+
+.affiliates a {
+	margin:0;
+	padding:0;
+}
+
+.affiliates a img {
+	width:inherit!important;
+}
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
+h2 {
+  color: #226BBE;   font-weight: bold;   letter-spacing: 0;   margin: 0 0 10px;   -ms-word-break: break-word;   word-break: break-word;  font-size: 24px; 
+}
+
+h3 {
+   color: #226BBE;   font-weight: bold;   letter-spacing: 0;   margin: 0 0 10px;   -ms-word-break: break-word;   word-break: break-word; font-size: 20px; 
+}
+
+h4 {
+  color: #226BBE;   font-weight: bold;   letter-spacing: 0;   margin: 0 0 10px;   -ms-word-break: break-word;   word-break: break-word;
+}
+

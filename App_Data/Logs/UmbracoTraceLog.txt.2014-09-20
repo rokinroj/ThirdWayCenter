@@ -1,0 +1,95 @@
+﻿2014-09-20 00:46:55,399 [7] INFO  Umbraco.Web.Security.WebSecurity - [Thread 8] User Id: 0 logged in
+2014-09-20 01:09:19,206 [7] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'home' with Id '0' has been published.
+2014-09-20 01:29:41,427 [7] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 17] An unhandled exception occurred
+System.InvalidOperationException: The template with Id 1053 does not exist, the page cannot render
+   at Umbraco.Web.Routing.PublishedContentRequestEngine.FindTemplate()
+   at Umbraco.Web.Routing.PublishedContentRequestEngine.FindPublishedContentAndTemplate()
+   at Umbraco.Web.Routing.PublishedContentRequestEngine.PrepareRequest()
+   at Umbraco.Web.UmbracoModule.ProcessRequest(HttpContextBase httpContext)
+   at Umbraco.Web.UmbracoModule.<Init>b__a(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-09-20 17:27:48,286 [7] INFO  Umbraco.Web.Security.WebSecurity - [Thread 18] User Id: 0 logged in
+2014-09-20 17:27:48,349 [7] INFO  Umbraco.Core.PluginManager - [Thread 11] Starting resolution types of Umbraco.Web.Trees.TreeController
+2014-09-20 17:27:48,349 [7] INFO  Umbraco.Core.PluginManager - [Thread 11] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2014-09-20 17:39:54,785 [7] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - [Thread 18] Could not find persisted pre-value for field editor
+2014-09-20 17:39:54,785 [7] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - [Thread 18] Could not find persisted pre-value for field hideLabel
+2014-09-20 21:08:38,933 [7] INFO  Umbraco.Web.Security.WebSecurity - [Thread 11] User Id: 0 logged in
+2014-09-20 21:08:38,996 [7] INFO  Umbraco.Core.PluginManager - [Thread 9] Starting resolution types of Umbraco.Web.Trees.TreeController
+2014-09-20 21:08:38,996 [7] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2014-09-20 21:36:14,191 [7] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 16] Content 'Website Data' with Id '0' has been published.
+2014-09-20 21:36:55,453 [7] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 20] Content 'Blog Categories' with Id '0' has been published.
+2014-09-20 21:37:05,437 [7] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content 'Blog Tags' with Id '0' has been published.
+2014-09-20 21:51:03,444 [7] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 18] Content 'TWC News' with Id '0' has been published.
+2014-09-20 22:11:13,152 [7] INFO  umbraco.content - [Thread 16] Loading content from database...
+2014-09-20 22:11:15,975 [7] INFO  umbraco.content - [Thread 20] Loading content from database...
+2014-09-20 22:11:18,737 [7] INFO  umbraco.content - [Thread 11] Loading content from database...
+2014-09-20 22:11:23,822 [7] INFO  umbraco.content - [Thread 20] Loading content from database...
+2014-09-20 22:20:23,485 [7] INFO  umbraco.content - [Thread 11] Loading content from database...
+2014-09-20 22:26:10,318 [7] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 20] Content 'TWC News' with Id '1072' has been published.
+2014-09-20 22:26:28,616 [7] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 11] Content 'TWC News' with Id '1072' has been published.
+2014-09-20 22:27:34,744 [7] INFO  umbraco.content - [Thread 20] Loading content from database...
+2014-09-20 22:27:37,256 [7] INFO  umbraco.content - [Thread 18] Loading content from database...
+2014-09-20 22:27:39,471 [7] INFO  umbraco.content - [Thread 20] Loading content from database...
+2014-09-20 22:27:41,749 [7] INFO  umbraco.content - [Thread 16] Loading content from database...
+2014-09-20 22:52:49,865 [7] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 20] Content 'Testimonials' with Id '0' has been published.
+2014-09-20 22:55:25,644 [7] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - [Thread 11] Could not find persisted pre-value for field startNode
+2014-09-20 22:55:25,644 [7] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - [Thread 11] Could not find persisted pre-value for field filter
+2014-09-20 22:55:25,644 [7] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - [Thread 11] Could not find persisted pre-value for field minNumber
+2014-09-20 22:55:25,644 [7] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - [Thread 11] Could not find persisted pre-value for field maxNumber
+2014-09-20 22:56:03,302 [7] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - [Thread 20] Could not find persisted pre-value for field multiPicker
+2014-09-20 22:56:03,302 [7] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - [Thread 20] Could not find persisted pre-value for field startNodeId
+2014-09-20 23:00:24,226 [7] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - [Thread 16] Could not find persisted pre-value for field crops
+2014-09-20 23:00:34,226 [7] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - [Thread 20] Could not find persisted pre-value for field startNodeId
+2014-09-20 23:06:07,533 [7] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 18] Content '1' with Id '0' has been published.
+2014-09-20 23:06:10,591 [7] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content '1' with Id '1081' has been published.
+2014-09-20 23:06:17,205 [7] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 11] Content '2' with Id '0' has been published.
+2014-09-20 23:06:26,237 [7] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 16] Content '3' with Id '0' has been published.
+2014-09-20 23:06:28,140 [7] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 15] Content '3' with Id '1083' has been published.
+2014-09-20 23:06:47,656 [7] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 15] Content '3' with Id '1083' has been published.
+2014-09-20 23:06:47,656 [7] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 15] Content '1' with Id '1081' has been published.
+2014-09-20 23:11:11,497 [7] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 9] An unhandled exception occurred
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.DuplicateNameException: An item with the alias Profile already exists
+   at Umbraco.Core.Persistence.Repositories.ContentTypeBaseRepository`2.PersistNewBaseContentType(ContentTypeDto dto, IContentTypeComposition entity)
+   at Umbraco.Core.Persistence.Repositories.ContentTypeRepository.PersistNewItem(IContentType entity)
+   at Umbraco.Core.Persistence.Repositories.RepositoryBase`2.PersistNewItem(IEntity entity)
+   at Umbraco.Core.Persistence.UnitOfWork.PetaPocoUnitOfWork.Commit(Action`1 transactionCompleting)
+   at Umbraco.Core.Persistence.UnitOfWork.PetaPocoUnitOfWork.Commit()
+   at Umbraco.Core.Services.ContentTypeService.Save(IContentType contentType, Int32 userId)
+   at Umbraco.Core.Services.ContentTypeService.Copy(IContentType original, String alias, String name, IContentType parent)
+   at Umbraco.Core.Services.ContentTypeService.Copy(IContentType original, String alias, String name, Int32 parentId)
+   at umbraco.dialogs.moveOrCopy.HandleDocumentTypeCopy()
+   at umbraco.dialogs.moveOrCopy.HandleMoveOrCopy(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.umbraco_dialogs_moveorcopy_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-09-20 23:11:41,605 [7] INFO  umbraco.content - [Thread 18] Loading content from database...
+2014-09-20 23:12:20,620 [7] INFO  umbraco.content - [Thread 18] Loading content from database...
+2014-09-20 23:13:15,048 [7] INFO  umbraco.content - [Thread 20] Loading content from database...
+2014-09-20 23:13:25,173 [7] INFO  umbraco.content - [Thread 20] Loading content from database...
+2014-09-20 23:17:38,016 [7] INFO  umbraco.content - [Thread 16] Loading content from database...
+2014-09-20 23:20:15,840 [7] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 20] Content 'Board of Directors' with Id '0' has been published.
+2014-09-20 23:21:27,974 [7] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 20] Content 'Supervisory Staff' with Id '0' has been published.
+2014-09-20 23:34:44,380 [7] INFO  umbraco.content - [Thread 16] Loading content from database...
+2014-09-20 23:45:25,612 [7] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - [Thread 9] Could not find persisted pre-value for field startNode
+2014-09-20 23:45:25,612 [7] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - [Thread 9] Could not find persisted pre-value for field filter
+2014-09-20 23:45:25,612 [7] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - [Thread 9] Could not find persisted pre-value for field minNumber
+2014-09-20 23:45:25,612 [7] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - [Thread 9] Could not find persisted pre-value for field maxNumber
+2014-09-20 23:46:41,334 [7] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - [Thread 15] Could not find persisted pre-value for field startNode
+2014-09-20 23:46:41,334 [7] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - [Thread 15] Could not find persisted pre-value for field filter
+2014-09-20 23:46:41,334 [7] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - [Thread 15] Could not find persisted pre-value for field minNumber
+2014-09-20 23:46:41,334 [7] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - [Thread 15] Could not find persisted pre-value for field maxNumber
+2014-09-20 23:47:48,350 [7] INFO  umbraco.BusinessLogic.Log - [Thread 9] Log scrubbed.  Removed all items older than 2014-07-22 23:47:48
+2014-09-20 23:50:16,143 [7] INFO  umbraco.content - [Thread 20] Loading content from database...

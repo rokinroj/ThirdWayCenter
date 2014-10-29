@@ -1,0 +1,27 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+Layout = "AWebpage.cshtml";
+}
+@section PageSpecificControls{
+<div class="module product-list">
+    <!-- PRODUCT -->
+    @foreach(var prd in CurrentPage.Children.ToList())
+    {
+    <div class="col-xs-12 product">
+        <figure class="col-sm-5"><img src="@Umbraco.Media(@prd.productImage).Url" alt=""></figure>
+        <div class="col-sm-7 content-text">
+            <!-- PRICE -->
+            <div class="price">@prd.ProductPrice</div>
+            <h2 class="title">@prd.productTitle</h2>
+			<a target="_blank" href="@prd.addToCartLink">
+            	<button class="btn-primary">Add To Cart</button>
+			</a>
+            <div class="product-info">
+                <h3>Product Information</h3>
+                <p><span>@prd.productDescription</span></p>
+            </div>
+        </div>
+    </div>
+    }
+</div>
+}

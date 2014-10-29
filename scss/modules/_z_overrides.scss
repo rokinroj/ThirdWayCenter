@@ -1,0 +1,23 @@
+/*---------------- Overrides --------------------*/
+
+.btn-primary, .btn-danger, .btn-success, .btn-warning, .btn-info, .label {text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);}
+
+.btn-default, .btn-link {text-shadow: none;}
+
+input[type="submit"].btn {margin-top: 10px;}
+
+.ctr, .ctr > * {
+	margin: 0 auto 10px;
+	text-align: center;
+}
+
+.module, .content, .sidebar {@extend %clearfix;}
+
+blockquote {
+	font-size: 14px;
+	font-style: italic;
+}
+
+.carousel-indicators .active {background-color: $global-blue;}
+
+.carousel-indicators li {border: 2px solid $global-blue;}

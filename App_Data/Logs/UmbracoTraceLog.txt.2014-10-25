@@ -1,0 +1,165 @@
+﻿2014-10-25 00:04:15,049 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 24] Content 'Site Footer' with Id '1095' has been published.
+2014-10-25 00:04:21,881 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 28] Content 'Secure Content' with Id '1247' has been published.
+2014-10-25 00:05:00,257 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 24] Content 'Site Footer' with Id '1095' has been published.
+2014-10-25 00:05:33,266 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 19] Content 'Site Footer' with Id '1095' has been published.
+2014-10-25 00:05:52,298 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 24] Content 'Site Footer' with Id '1095' has been published.
+2014-10-25 00:07:42,917 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 30] Content 'Education Supervisor Staff' with Id '0' has been published.
+2014-10-25 00:07:58,938 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 28] Content 'Treatment Supervisory Staff' with Id '0' has been published.
+2014-10-25 00:09:27,967 [32] INFO  umbraco.content - [Thread 30] Loading content from database...
+2014-10-25 00:10:32,207 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'Education Supervisor Staff' with Id '1352' has been published.
+2014-10-25 00:10:32,207 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'Treatment Supervisory Staff' with Id '1353' has been published.
+2014-10-25 00:10:32,207 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'Board Of Directors' with Id '1206' has been published.
+2014-10-25 00:10:32,207 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'Contact Us' with Id '1159' has been published.
+2014-10-25 00:10:49,539 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 15] Content 'Education Supervisor Staff' with Id '1352' has been published.
+2014-10-25 00:21:00,100 [32] WARN  Umbraco.Core.Models.Member - [Thread 30] Trying to access the 'PasswordQuestion' property on Umbraco.Core.Models.Member but the umbracoMemberPasswordRetrievalQuestion property does not exist on the member type so a default value is returned. Ensure that you have a property type with alias: umbracoMemberPasswordRetrievalQuestion configured on your member type in order to use the 'PasswordQuestion' property on the model correctly.
+2014-10-25 00:21:00,131 [32] WARN  Umbraco.Core.Models.Member - [Thread 30] Trying to access the 'PasswordQuestion' property on Umbraco.Core.Models.Member but the umbracoMemberPasswordRetrievalQuestion property does not exist on the member type so a default value is returned. Ensure that you have a property type with alias: umbracoMemberPasswordRetrievalQuestion configured on your member type in order to use the 'PasswordQuestion' property on the model correctly.
+2014-10-25 00:21:11,129 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 13] Content 'Intro' with Id '1247' has been published.
+2014-10-25 00:21:24,654 [32] WARN  Umbraco.Core.Models.Member - [Thread 15] Trying to access the 'PasswordQuestion' property on Umbraco.Core.Models.Member but the umbracoMemberPasswordRetrievalQuestion property does not exist on the member type so a default value is returned. Ensure that you have a property type with alias: umbracoMemberPasswordRetrievalQuestion configured on your member type in order to use the 'PasswordQuestion' property on the model correctly.
+2014-10-25 00:21:24,654 [32] WARN  Umbraco.Core.Models.Member - [Thread 15] Trying to access the 'PasswordQuestion' property on Umbraco.Core.Models.Member but the umbracoMemberPasswordRetrievalQuestion property does not exist on the member type so a default value is returned. Ensure that you have a property type with alias: umbracoMemberPasswordRetrievalQuestion configured on your member type in order to use the 'PasswordQuestion' property on the model correctly.
+2014-10-25 00:22:06,992 [32] WARN  Umbraco.Core.Models.Member - [Thread 15] Trying to access the 'PasswordQuestion' property on Umbraco.Core.Models.Member but the umbracoMemberPasswordRetrievalQuestion property does not exist on the member type so a default value is returned. Ensure that you have a property type with alias: umbracoMemberPasswordRetrievalQuestion configured on your member type in order to use the 'PasswordQuestion' property on the model correctly.
+2014-10-25 00:22:45,336 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 18] Content 'Intro' with Id '1247' has been published.
+2014-10-25 00:23:52,665 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 15] Content 'Intro' with Id '1247' has been published.
+2014-10-25 00:24:37,888 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 13] Content 'Staff Connections' with Id '1108' has been published.
+2014-10-25 00:27:24,323 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 30] Content 'After Care & Emancipation Programs' with Id '1242' has been published.
+2014-10-25 00:28:04,945 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 15] Content 'After Care & Emancipation Programs' with Id '1242' has been published.
+2014-10-25 00:30:47,340 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 28] Content 'Education <br>Supervisor Staff' with Id '1352' has been published.
+2014-10-25 00:31:14,016 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 28] Content 'Treatment <br>Supervisory Staff' with Id '1353' has been published.
+2014-10-25 00:31:40,661 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 30] Content 'Treatment <br>Supervisory Staff' with Id '1353' has been published.
+2014-10-25 00:35:50,883 [32] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 13] Index is being optimized, Provider=InternalIndexer, NodeId=-1
+2014-10-25 00:36:41,770 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 21] Content 'Lawrence Coleman' with Id '0' has been published.
+2014-10-25 00:37:15,107 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 13] Content 'Tony Costa' with Id '0' has been published.
+2014-10-25 00:37:37,384 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 21] Content 'Tony Costa' with Id '1357' has been unpublished.
+2014-10-25 00:37:42,329 [32] WARN  Umbraco.Core.PropertyEditors.LegacyPropertyEditorIdToAliasConverter - [Thread 21] A legacy GUID id was generated for property editor Umbraco.MultipleMediaPicker. This occurs when the legacy APIs are used and done to attempt to maintain backwards compatibility. Consider upgrading all code to use the new Services APIs instead to avoid any potential issues.
+2014-10-25 00:38:23,466 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content 'Dana Freisinger' with Id '0' has been published.
+2014-10-25 00:39:57,268 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'Michelle Oberle' with Id '0' has been published.
+2014-10-25 00:42:24,203 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'Lisa Baylon' with Id '0' has been published.
+2014-10-25 00:43:31,002 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content 'Laurie Ditterline' with Id '1364' has been published.
+2014-10-25 00:45:12,214 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 28] Content 'Education <br>Supervisor Staff' with Id '1352' has been published.
+2014-10-25 00:45:35,645 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 21] Content 'Treatment <br>Supervisory Staff' with Id '1353' has been published.
+2014-10-25 00:56:31,340 [32] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 28] An unhandled exception occurred
+System.Web.HttpCompileException (0x80004005): c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\668a2fe6\2d2629bf\App_Web_boardmemberslistpage.cshtml.65a2d1ee.wl37ek8h.0.cs(191): error CS1513: } expected
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-10-25 00:56:46,223 [32] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 17] An unhandled exception occurred
+System.Web.HttpParseException (0x80004005): An opening "(" is missing the corresponding closing ")".
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-10-25 02:02:16,627 [32] INFO  Umbraco.Web.Security.WebSecurity - [Thread 21] User Id: 0 logged in
+2014-10-25 02:02:16,690 [32] INFO  Umbraco.Core.PluginManager - [Thread 13] Starting resolution types of Umbraco.Web.Trees.TreeController
+2014-10-25 02:02:16,690 [32] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2014-10-25 02:05:23,623 [32] WARN  Umbraco.Core.Models.Member - [Thread 28] Trying to access the 'PasswordQuestion' property on Umbraco.Core.Models.Member but the umbracoMemberPasswordRetrievalQuestion property does not exist on the member type so a default value is returned. Ensure that you have a property type with alias: umbracoMemberPasswordRetrievalQuestion configured on your member type in order to use the 'PasswordQuestion' property on the model correctly.
+2014-10-25 02:05:26,338 [32] WARN  Umbraco.Core.Models.Member - [Thread 17] Trying to access the 'PasswordQuestion' property on Umbraco.Core.Models.Member but the umbracoMemberPasswordRetrievalQuestion property does not exist on the member type so a default value is returned. Ensure that you have a property type with alias: umbracoMemberPasswordRetrievalQuestion configured on your member type in order to use the 'PasswordQuestion' property on the model correctly.
+2014-10-25 02:05:26,338 [32] WARN  Umbraco.Core.Models.Member - [Thread 17] Trying to access the 'PasswordQuestion' property on Umbraco.Core.Models.Member but the umbracoMemberPasswordRetrievalQuestion property does not exist on the member type so a default value is returned. Ensure that you have a property type with alias: umbracoMemberPasswordRetrievalQuestion configured on your member type in order to use the 'PasswordQuestion' property on the model correctly.
+2014-10-25 02:09:30,850 [32] WARN  Umbraco.Core.Models.Member - [Thread 21] Trying to access the 'PasswordQuestion' property on Umbraco.Core.Models.Member but the umbracoMemberPasswordRetrievalQuestion property does not exist on the member type so a default value is returned. Ensure that you have a property type with alias: umbracoMemberPasswordRetrievalQuestion configured on your member type in order to use the 'PasswordQuestion' property on the model correctly.
+2014-10-25 02:09:30,944 [32] WARN  Umbraco.Core.Models.Member - [Thread 28] Trying to access the 'PasswordQuestion' property on Umbraco.Core.Models.Member but the umbracoMemberPasswordRetrievalQuestion property does not exist on the member type so a default value is returned. Ensure that you have a property type with alias: umbracoMemberPasswordRetrievalQuestion configured on your member type in order to use the 'PasswordQuestion' property on the model correctly.
+2014-10-25 02:09:30,944 [32] WARN  Umbraco.Core.Models.Member - [Thread 28] Trying to access the 'PasswordQuestion' property on Umbraco.Core.Models.Member but the umbracoMemberPasswordRetrievalQuestion property does not exist on the member type so a default value is returned. Ensure that you have a property type with alias: umbracoMemberPasswordRetrievalQuestion configured on your member type in order to use the 'PasswordQuestion' property on the model correctly.
+2014-10-25 03:09:43,672 [32] INFO  Umbraco.Web.Security.WebSecurity - [Thread 28] User Id: 1 logged in
+2014-10-25 03:11:03,825 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content 'Furniture & Household Donations' with Id '1167' has been published.
+2014-10-25 03:11:41,218 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'Furniture & Household Donations' with Id '1167' has been published.
+2014-10-25 03:11:53,011 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 21] Content 'Furniture & Household Donations' with Id '1167' has been published.
+2014-10-25 03:12:32,931 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'Furniture & Household Donations' with Id '1167' has been published.
+2014-10-25 03:23:10,619 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 28] Content 'Copier Links' with Id '0' has been published.
+2014-10-25 03:30:59,380 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 21] Content 'Schedule and Protocol for Client Report Forms' with Id '0' has been published.
+2014-10-25 03:35:42,331 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content 'TWC Policy Page' with Id '0' has been published.
+2014-10-25 03:37:47,114 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content 'Policy Page' with Id '1369' has been published.
+2014-10-25 03:39:29,699 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'Phone Tips' with Id '0' has been published.
+2014-10-25 03:40:51,177 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content 'Phone Tips' with Id '1370' has been published.
+2014-10-25 03:41:28,648 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 28] Content 'Policy Page' with Id '1369' has been published.
+2014-10-25 03:46:19,009 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 21] Content 'Workman's Comp' with Id '0' has been published.
+2014-10-25 03:48:12,311 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content 'Contact Info' with Id '0' has been published.
+2014-10-25 03:48:26,086 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 28] Content 'Workman's Comp' with Id '1372' has been published.
+2014-10-25 03:48:37,068 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 13] Content 'Phone Tips' with Id '1370' has been published.
+2014-10-25 03:48:48,690 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 21] Content 'Policy Page' with Id '1369' has been published.
+2014-10-25 03:48:58,674 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 28] Content 'Schedule and Protocol for Client Report Forms' with Id '1367' has been published.
+2014-10-25 03:49:08,643 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 19] Content 'Copier Links' with Id '1366' has been published.
+2014-10-25 03:49:19,500 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 13] Content 'Intro' with Id '1247' has been published.
+2014-10-25 03:49:24,601 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 28] Content 'Intro' with Id '1247' has been published.
+2014-10-25 03:49:32,729 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 13] Content 'Copier Links' with Id '1366' has been published.
+2014-10-25 03:49:42,728 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'Schedule and Protocol for Client Report Forms' with Id '1367' has been published.
+2014-10-25 03:49:52,697 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 19] Content 'Policy Page' with Id '1369' has been published.
+2014-10-25 03:50:03,258 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'Phone Tips' with Id '1370' has been published.
+2014-10-25 03:50:13,070 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 19] Content 'Workman's Comp' with Id '1372' has been published.
+2014-10-25 03:50:24,318 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 19] Content 'Contact Info' with Id '1373' has been published.
+2014-10-25 03:51:39,322 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 28] Content 'Youth Resources' with Id '0' has been published.
+2014-10-25 03:51:53,908 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content 'Youth Resources' with Id '1374' has been published.
+2014-10-25 03:51:57,808 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content 'Youth Resources' with Id '1374' has been published.
+2014-10-25 03:52:06,279 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 21] Content 'Staff Connections' with Id '1108' has been published.
+2014-10-25 03:52:21,754 [32] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 28] Content 'Staff Connections' with Id '1108' has been published.
+2014-10-25 21:51:46,451 [32] INFO  umbraco.BusinessLogic.Log - [Thread 38] Log scrubbed.  Removed all items older than 2014-08-26 21:51:46
+2014-10-25 21:51:46,451 [32] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 38] Application shutdown. Reason: HostingEnvironment

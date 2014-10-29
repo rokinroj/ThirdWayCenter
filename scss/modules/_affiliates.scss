@@ -1,0 +1,51 @@
+/* --- Affiliate Logos --- */
+
+.affiliates {
+	@include drop-shadow-img;
+	background-position: center top;
+	float: left;
+	margin-top: 1em;
+	padding: 40px 0 25px 30px;
+	width: 100%;
+	h2 {
+		margin-bottom: 15px;
+		text-align: center;
+	}
+	img {
+		display: inline-block;
+		float: none;
+		margin: 0 0 0 25px;
+		text-align: center;
+		width: 25%;
+	}
+	img:nth-of-type(1) {padding-left: 30px;}
+	img:nth-of-type(1), img:nth-of-type(5) {
+		margin-top: 5px;
+		width: 115px;
+	}
+	@media (min-width: 600px) and (max-width: $break-lg-phone) {
+		img {margin-left: 45px;}
+	}
+	@media (min-width: $break-lg-phone) {
+		img {
+			margin: 0 auto;
+			width: 16.66666667%;
+		}
+		img:nth-of-type(1), img:nth-of-type(5) {
+			width: 85px;
+		}
+	}
+	@media (min-width: $break-tablet) {
+		padding-left: 0;
+		h2  {margin-bottom: 5px;}
+		img {margin-left: 10px;}
+		img:nth-of-type(1) {
+			padding-top: 5px;
+			padding-left: 25px;
+		}
+		img:nth-of-type(1), img:nth-of-type(5) {width: 100px;}
+	}
+	@media (min-width: $break-desktop) {
+		img {margin-left: 25px;}
+	}
+}

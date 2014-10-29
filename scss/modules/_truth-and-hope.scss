@@ -1,0 +1,19 @@
+.th-quotes {
+	text-align: center;
+	.quote-block {margin: 10px 0 20px;}
+	.header {
+		color: $global-orange;
+		font: 24px $RobotoSlab;
+		margin-bottom: 4px;
+		text-transform: uppercase;
+	}
+	.quote {
+		color: $global-blue;
+		font: 22px/26px $AD;
+	}
+	.resident {
+		font-size: 14px;
+		line-height: 16px;
+		padding-bottom: 10px;
+	}
+}

@@ -1,0 +1,50 @@
+/* --- Main Content  --- */
+
+#main-content {
+	background-color: white;
+	min-height: 500px;
+}
+
+.content-wrap {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+.content-header {
+	border-bottom: 1px solid $global-blue;
+	margin-bottom: 15px;
+	padding-top: 50px;
+	padding-bottom: 25px;	
+	.content-image {		
+		float: right;
+		margin: -110px 0 0;
+		padding: 0;
+		position: relative;
+		z-index: 1;
+	}
+	@media (min-width: $break-lg-phone) {
+		.content {padding-top: 25px;}
+	}
+}
+
+/* --- Content --- */
+
+.content {
+	@media (min-width: $break-lg-phone) {padding: 0 0 35px 5%;}	
+	@media (min-width: $break-desktop) {padding-left: 0;}
+}
+
+.blogs .content {
+	@media (min-width: $break-lg-phone) {padding-left: 0;}
+}
+
+/* --- Two Col --- */
+
+.two-col {	
+	.content {
+		
+	}
+}
+

@@ -1,0 +1,26 @@
+/* --- Content Nav --- */
+
+.side-nav {
+	font-weight: bold;
+	position: relative;
+	z-index: 2;
+	.title {
+		color: $global-blue;
+		font: bold 19px $RobotoSlab;
+		text-transform: uppercase;
+	}
+	nav {	
+		a {
+			color: $body-color;
+			display: block;
+			font-size: 1em;
+			line-height:1.2em;
+			margin: 0 0 5px;
+			width: 100%;
+		}
+		a:hover, a.active {color: $global-orange;}
+	}
+	@media (min-width: $break-lg-phone) {
+		//nav a {font-size: 1.1em;}
+	}
+}

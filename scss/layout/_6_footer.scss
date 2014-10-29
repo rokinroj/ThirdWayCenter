@@ -1,0 +1,88 @@
+
+/* --- Footer  --- */
+
+footer {
+	background-color: $global-blue;
+	bottom: 0;	
+	color: white;
+	position: relative;
+	padding: 20px 0;
+	text-align:left;
+	width: 100%;
+	* {color: white;}
+	.row {
+		padding-right:15px;
+		padding-left:15px;
+	}
+/*
+	&:after {
+		background-color: $global-blue;
+		content: "";
+		height: 100%;
+		position: absolute;
+		width: auto;
+		position: absolute;
+		bottom: -100px;
+		
+	}
+*/		
+}
+
+/* --- Footer Contact --- */
+
+.footer-contact {
+	padding: 0 10px 0 0;
+	figure {
+		margin-bottom: 20px; 
+		padding-left: 0;
+		text-align: left;
+	}
+	address {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	a {color: white;}
+	.soc-net-icons {
+		margin-top: 15px;
+		.copy {
+			font-size: 12px;
+			margin-top: 30px;
+			text-transform: uppercase;
+			a {width: 100%;}
+		}
+	}
+	@media (min-width: $break-sm-phone) and (max-width: $break-lg-phone) {		
+		display: block;
+		margin: 0 auto;
+		padding: 0 10px 0 0;
+		text-align: center;
+		width: auto;
+		figure {
+			text-align: center;
+		}
+	}
+	@media (min-width: $break-tablet) {padding: 0;}
+}
+
+/* --- Footer Nav --- */
+
+.footer-nav {
+	@extend .hidden-xs;
+	padding-top: 18px;
+	h4 {
+		font-size: 16px;
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+	nav {
+		a {
+			display: block;
+			font-size: 14px;
+			&:before {
+				content: " ";
+				font-family: $FontAwesome;
+				padding-right: 3px;
+			}
+		}
+	}	
+}

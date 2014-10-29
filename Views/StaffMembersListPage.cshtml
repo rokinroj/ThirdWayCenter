@@ -1,0 +1,75 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "AWebpage.cshtml";
+}
+
+@section PageSpecificControls{
+	@{
+		var allAdmin = CurrentPage.Children();
+		var allTreatment = CurrentPage.Children().Where("staffMemberType == 69");
+		var allEducation = CurrentPage.Children().Where("staffMemberType == 70");
+	}	
+	<div class="module bios">
+		<!-- POSTS -->
+		<div class="posts">
+		@foreach(var profile in allAdmin)
+		{			
+			<article>
+			@if (profile.GetProperty("profileImage") != null)
+			{
+				var imageId = profile.profileImage;
+				if(!String.IsNullOrWhiteSpace(imageId))
+				{
+					<figure><img src="@Umbraco.Media(@profile.profileImage).Url" /></figure>
+				}
+			}
+			<h3 class="title">@profile.profileTitle<span>@profile.profileSubTitle</span></h3>
+			@profile.profileBody
+			</article>				
+		}
+		</div>
+	</div>
+	@if(allTreatment.Any())
+	{
+	<p><h2>TREATMENT</h2></p>
+	<div class="module bios">
+		<!-- POSTS -->
+		<div class="posts">
+		@foreach(var profile in allTreatment)
+		{			
+			<article>
+			@if (profile.GetProperty("profileImage") != null)
+			{
+				var imageId = @profile.profileImage;
+				<figure><img src="@Umbraco.Media(@profile.profileImage).Url" /></figure>
+			}
+			<h3 class="title">@profile.profileTitle<span>@profile.profileSubTitle</span></h3>
+			@profile.profileBody
+			</article>				
+		}
+		</div>
+	</div>
+	}
+	
+	@if(allEducation.Any())
+	{
+	<p><h2>EDUCATION</h2></p>
+	<div class="module bios">
+		<!-- POSTS -->
+		<div class="posts">
+		@foreach(var profile in allEducation)
+		{			
+			<article>
+			@if (profile.GetProperty("profileImage") != null)
+			{
+				var imageId = @profile.profileImage;
+				<figure><img src="@Umbraco.Media(@profile.profileImage).Url" /></figure>
+			}
+			<h3 class="title">@profile.profileTitle<span>@profile.profileSubTitle</span></h3>
+			@profile.profileBody
+			</article>				
+		}
+		</div>
+	</div>
+	}
+}

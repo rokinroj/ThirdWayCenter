@@ -1,0 +1,24 @@
+/*---------------- Sidebar Styles --------------------*/
+
+.sidebar {
+	margin-top: 2em;
+	.module { 		
+		border: 1px solid #c4d6ec;
+		margin: 0 auto 2em;
+		max-width: 350px;
+		padding: 10px;
+		position: relative;
+		&:after {
+			background: url(../images/img-drop-shadow-sm.jpg) no-repeat center top;		
+			background-size: 100%;
+			display: block;
+			height: 19px;
+			width: 100%;
+			position: absolute;
+			bottom: -21px;
+			left: 0;
+		}
+	}
+	@media (min-width: $break-lg-phone) {margin-top: 0;}
+	@media (min-width: $break-desktop) {width: 250px;}
+}

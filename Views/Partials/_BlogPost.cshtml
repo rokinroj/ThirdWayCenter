@@ -1,0 +1,19 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+<article class="col-xs-12">
+	@if(CurrentPage.GetPropertyValue("postImage") != null)
+	{		
+		var imageId = CurrentPage.postImage;
+		if(!String.IsNullOrWhiteSpace(imageId.ToString()))
+		{
+			<figure class="right">
+				<img src="@Umbraco.Media(imageId).Url" />
+			</figure>
+		}
+	}
+	<div class="col-ms-7 col-sm-7 col-ms-7 col-sm-7 content-text blog-post-link">
+		<time xsi:type="xsd:date" datetime="@CurrentPage.PostDate.ToShortDateString()">@CurrentPage.PostDate.ToShortDateString()</time>
+		<h4><a href="@CurrentPage.Url">@CurrentPage.blogPostSummary</a></h4>
+		<a href="@CurrentPage.Url" class="btn">Read More</a>
+	</div>
+</article>

@@ -1,0 +1,36 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "AWebpage.cshtml";
+}
+
+@section PageSpecificControls{
+	
+@{
+	var faqs = Umbraco.Content(1450).Children();
+	int x = 0;
+}
+	
+	
+<div class="bs-example">
+	<div class="panel-group" id="accordion">
+		
+		@foreach(var faq in faqs)
+		{
+		x = x + 1;
+		<div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse_@x">@faq.Question</a>
+                </h4>
+            </div>
+            <div id="collapse_@x" class="panel-collapse collapse">
+                <div class="panel-body">
+                    @faq.Answer
+                </div>
+            </div>
+        </div>
+		}
+	</div>
+</div>
+		
+}

@@ -1,0 +1,28 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@* Check the current page has ancestors *@
+@if (CurrentPage.Ancestors().Any())
+{ 
+	@* get top level item / get section  *@
+	if(CurrentPage.Parent.Id == 1055)
+	{
+		<p class="title">In This Section</p>
+		<nav>
+		@* For each page in the ancestors collection which have been ordered by Level (so we start with the highest top node first) *@
+		@foreach (var childPage in CurrentPage.Children.Where("Visible"))
+		{
+			<a class="@(childPage.IsAncestorOrSelf(CurrentPage) ? "active" : null)" href="@childPage.Url">@Html.Raw(childPage.Name)</a>
+		}
+		</nav>
+	}
+	else
+	{
+		<p class="title">In This Section</p>
+		<nav>
+		@foreach (var childPage in CurrentPage.Parent.Children())
+		{
+			<a class="@(childPage.IsAncestorOrSelf(CurrentPage) ? "active" : null)" href="@childPage.Url">@Html.Raw(childPage.Name)</a>
+		}
+		</nav>
+	}
+}

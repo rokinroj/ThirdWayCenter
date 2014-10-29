@@ -1,0 +1,37 @@
+/* --- Blog Styles --- */
+
+.blogs .social-media-posts {
+	padding-left: 4%;
+	article {
+		@include posts-block;
+		display: inline-block;
+		margin-bottom: 25px;
+		padding-bottom: 25px;
+		width: 100%;
+		.soc-btn {
+			padding: 0;
+			position: relative;
+		}
+	}
+	@media (min-width: $break-tablet) {
+		figure {display: none;}
+		.content-text {padding-left: 0;}
+	}
+}
+
+.blogs {
+	h1 {text-transform: uppercase;}
+	@media (min-width: $break-lg-phone) and (max-width: $break-tablet) {
+		.blog-feed, .social-media-posts {width: 100%;}
+	}
+}
+
+/* --- Blog Details --- */
+
+.blog-detail {	
+	&:first-child h2 {
+		margin-bottom: 10px;
+		text-align: left;
+	}
+	.posts time {margin-bottom:2em;}
+}

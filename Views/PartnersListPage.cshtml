@@ -1,0 +1,33 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "AWebpage.cshtml";
+}
+
+@section PageSpecificControls{
+	
+@{
+	var allPartners = CurrentPage.Children();
+}
+	
+	<div class="module bios">
+		<!-- POSTS -->
+		<div class="posts">
+		@foreach(var profile in allPartners)
+		{			
+			<article>
+			@if (profile.GetProperty("profileImage") != null)
+			{
+				var imageId = profile.profileImage;
+				if(!String.IsNullOrWhiteSpace(imageId))
+				{
+					<figure><img src="@Umbraco.Media(@profile.profileImage).Url" /></figure>
+				}
+			}
+			<h3 class="title">@profile.profileTitle<span>@profile.profileSubTitle</span></h3>
+			@profile.profileBody
+			</article>				
+		}
+		</div>
+	</div>
+
+}

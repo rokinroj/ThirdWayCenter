@@ -1,0 +1,55 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+Layout = "AWebpage.cshtml";
+}
+@section PageSpecificControls{
+@{
+var treatmentLeaders = Umbraco.Content(1432).Children();
+var staffMembers = Umbraco.Content(1433).Children();
+}
+<div class="module">
+	@CurrentPage.contentAboveContacts
+    <!-- POSTS -->
+    <div class="contact-list">
+        <h3>Treatment Leader Contacts</h3>
+        <table style="width:80%">
+            <tr>
+                <th>Name</th>
+                <th>Contact Title</th>
+                <th style="text-align:center;">Home Phone</th>
+                <th style="text-align:center;">Cell Phone</th>
+            </tr>
+            @foreach(var leader in treatmentLeaders)
+            {
+            <tr>
+                <td>@leader.contactName</td>
+                <td>@leader.contactTitle</td>
+                <td style="text-align:center;">@leader.homePhone</td>
+                <td style="text-align:center;">@leader.cellPhone</td>
+            </tr>
+            }
+        </table>
+    </div>
+    <div class="contact-list">
+        <h3>Staff Member Contacts</h3>
+        <table style="width:80%">
+            <tr>
+                <th>Name</th>
+                <th>Contact Title</th>
+                <th style="text-align:center;">Home Phone</th>
+                <th style="text-align:center;">Cell Phone</th>
+            </tr>
+            @foreach(var staff in staffMembers)
+            {
+            <tr>
+                <td>@staff.contactName</td>
+                <td>@staff.contactTitle</td>
+                <td style="text-align:center;">@staff.homePhone</td>
+                <td style="text-align:center;">@staff.cellPhone</td>
+            </tr>
+            }
+        </table>
+    </div>
+	@CurrentPage.contentBelowContacts
+</div>
+}
