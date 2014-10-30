@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("../resources/bower_components/bootstrap/dist/css/bootstrap.min.css");
+@import url("../resources/bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css");
 @import url("../resources/bower_components/fontawesome/css/font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Architects+Daughter");
 .intro {
@@ -532,22 +533,24 @@ header {
   background: none;
   color: #cd5a13; }
 
-.nav > li.dropdown:hover {
-  border: none; }
+@media (max-width: 48em) {
+  .nav > li.dropdown:hover {
+    border: none; } }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
   background-color: #DDD; }
 
 .nav > li.dropdown:hover > a {
-  background-color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.25);
+  	/*
   border: 1px solid #b5cce7;
-  border-bottom: none;
-  color: white;
-  margin: -1px -1px 0 0;
-  padding-bottom: 5px; }
+  	border-bottom: none;
+  */
+  color: white; }
   @media (min-width: 48em) {
     .nav > li.dropdown:hover > a {
-      color: #226BBE !important; } }
+      color: #226BBE !important;
+      background: none; } }
 
 .navbar-nav > li.dropdown:hover .dropdown-menu {
   display: none; }
@@ -1241,6 +1244,82 @@ textarea {
     line-height: 20px;
     margin: 0; }
 
+/* --- Offcanvas Nav  --- */
+html, .navmenu {
+  right: 0 !important; }
+
+.navmenu {
+  background: #19528e;
+  border: none;
+  z-index: 1; }
+  .navmenu .navbar-header {
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.45em;
+    margin-bottom: 0.5em;
+    padding: 0.938em 0.625em 0; }
+    .navmenu .navbar-header p {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+      margin-bottom: 0; }
+  @media (min-width: 48em) {
+    .navmenu {
+      display: none; } }
+
+.navmenu-default .navmenu-nav > li > a, .navbar-default .navbar-offcanvas .navmenu-nav > li > a {
+  color: white; }
+
+.navmenu-default .navmenu-nav > .dropdown > a .caret, .navbar-default .navbar-offcanvas .navmenu-nav > .dropdown > a .caret {
+  border-top-color: white;
+  border-bottom-color: white; }
+
+.navmenu-default .navmenu-nav > .open > a, .navbar-default .navbar-offcanvas .navmenu-nav > .open > a, .navmenu-default .navmenu-nav > .open > a:hover, .navbar-default .navbar-offcanvas .navmenu-nav > .open > a:hover, .navmenu-default .navmenu-nav > .open > a:focus, .navbar-default .navbar-offcanvas .navmenu-nav > .open > a:focus {
+  background: #a7a9ac;
+  color: white;
+  text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.25); }
+
+.navmenu-default .navmenu-nav > li > a:hover, .navbar-default .navbar-offcanvas .navmenu-nav > li > a:hover, .navmenu-default .navmenu-nav > li > a:focus, .navbar-default .navbar-offcanvas .navmenu-nav > li > a:focus {
+  background: #a7a9ac;
+  color: white;
+  text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.25); }
+
+.navmenu-default .navmenu-nav > .dropdown > a:hover .caret, .navbar-default .navbar-offcanvas .navmenu-nav > .dropdown > a:hover .caret, .navmenu-default .navmenu-nav > .dropdown > a:focus .caret, .navbar-default .navbar-offcanvas .navmenu-nav > .dropdown > a:focus .caret {
+  border-top-color: white;
+  border-bottom-color: white; }
+
+.navmenu-default .navmenu-nav.dropdown-menu, .navbar-default .navbar-offcanvas .navmenu-nav.dropdown-menu {
+  background: #EEE; }
+
+.navmenu-default .navmenu-nav.dropdown-menu {
+  padding: 0.8em 0; }
+  .navmenu-default .navmenu-nav.dropdown-menu a {
+    color: #226BBE; }
+
+.navmenu-default .dropdown-menu.navmenu-nav > li > a:hover, .dropdown-menu.navbar-default .navbar-offcanvas .navmenu-nav > li > a:hover, .navmenu-default .dropdown-menu.navmenu-nav > li > a:focus, .dropdown-menu.navbar-default .navbar-offcanvas .navmenu-nav > li > a:focus {
+  color: white; }
+
+#page-wrap.canvas {
+  position: relative;
+  left: 0;
+  z-index: 2;
+  min-height: 100%;
+  padding: 0;
+  background: #fff; }
+
+@media (min-width: 0) {
+  .navbar-toggle {
+    display: block;
+    /* force showing the toggle */ } }
+@media (min-width: 992px) {
+  body {
+    padding: 0; }
+
+  .navbar {
+    right: auto;
+    background: none;
+    border: none; }
+
+  .canvas {
+    padding: 0; } }
 /*---------------- Content Posts --------------------*/
 .posts {
   display: inline-block; }
@@ -1444,6 +1523,7 @@ textarea {
     width: 100%;
     z-index: 5; }
     .slider .slider-text h2 {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 24px;
       line-height: 30px;
       text-align: left;
