@@ -2,110 +2,96 @@
 @{
 Layout = null;
 }
-<!DOCTYPE html>
-<!--[if lt IE 7]>      
-<html class="no-js lt-ie9 lt-ie8 lt-ie7">
-<![endif]-->
-<!--[if IE 7]>         
-<html class="no-js lt-ie9 lt-ie8">
-<![endif]-->
-<!--[if IE 8]>         
-<html class="no-js lt-ie9">
-<![endif]-->
-<!--[if gt IE 8]><!--> 
+<!doctype html>
 <html class="no-js">
-    <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>
-			@{
-				if(!String.IsNullOrEmpty(@Umbraco.Field("metaTitle").ToString()))
-				{
-					
-					@Html.Raw(Umbraco.Field("metaTitle").ToString().Replace("<br />", "")+ " - Third Way Center");
-				}
-				else
-				{	
-					@Html.Raw(CurrentPage.Name.ToString() + "- 3Third Way Center");
-				}
-			}
-		</title>
-        <meta name="description" content="@Umbraco.Field("MetaDescription")" />
-        <meta name="Author" content="Third Way Center" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="msapplication-TileColor" content="#226BBE">
-        <meta name="msapplication-TileImage" content="/images/touch-icons/favicon-144.png">
-        <!-- Open Graph Tags -->
-		<meta property="og:title" content="@{@Html.Raw(Html.Encode(Umbraco.Field("metaTitle")).Replace("<br />", "")+ " - Third Way Center");}" />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content=@String.Format("http://thirdwaycenter.org{0}",@CurrentPage.Url)/>			 
-		<meta property="og:image" content="http://thirdwaycenter.org/images/logo-desktop.jpg" />
-		<meta property="og:description" content="@Umbraco.Field("MetaDescription")" />
-		<meta property="og:site_name" content="Third Way Center" />
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>
+	@{
+		if(!String.IsNullOrEmpty(@Umbraco.Field("metaTitle").ToString()))
+		{
 			
-		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="shortcut icon" href="/favicon.ico">
-		<link rel="apple-touch-icon-precomposed" href="/images/touch-icons/favicon-152.png">
-	
-        <!-- Latest compiled and minified JavaScript -->
-		<script src="/scripts/vendor/jquery-1.10.2.min.js"></script>
-        <script src="/scripts/vendor/modernizr-2.6.2.min.js"></script> 
-			
-		<!-- Add fancyBox main JS and CSS files -->
+			@Html.Raw(Umbraco.Field("metaTitle").ToString().Replace("<br />", "")+ " - Third Way Center");
+		}
+		else
+		{	
+			@Html.Raw(CurrentPage.Name.ToString() + "- 3Third Way Center");
+		}
+	}
+	</title>
+	<meta name="description" content="@Umbraco.Field("MetaDescription")" />
+	<meta name="Author" content="Third Way Center" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="msapplication-TileColor" content="#226BBE">
+	<meta name="msapplication-TileImage" content="/images/touch-icons/favicon-144.png">
+	<!-- Open Graph Tags -->
+	<meta property="og:title" content="@{@Html.Raw(Html.Encode(Umbraco.Field("metaTitle")).Replace("<br />", "")+ " - Third Way Center");}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content=@String.Format("http://thirdwaycenter.org{0}",@CurrentPage.Url)/>			 
+	<meta property="og:image" content="http://thirdwaycenter.org/images/logo-desktop.jpg" />
+	<meta property="og:description" content="@Umbraco.Field("MetaDescription")" />
+	<meta property="og:site_name" content="Third Way Center" />
 		
-		<link rel="stylesheet" type="text/css" href="/scripts/vendor/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+	<link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="images/touch-icons/favicon-152.png">
+	<!-- Add fancyBox CSS files -->		
+	<link rel="stylesheet" type="text/css" href="/scripts/vendor/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
         
-        <!-- Latest CSS -->
-		<link rel="stylesheet" href="/css/screen.css">
-		<link rel="stylesheet" href="/css/site.css">
+    <!-- Latest CSS -->
+	<link rel="stylesheet" href="/css/screen.css">
+	<link rel="stylesheet" href="/css/site.css">
 		
-		<!--Render out any scripts included in the CMS -->
-        @Umbraco.Field("headerScripts")
-    </head>
-    <body>
-		<!-- Facebook -->
-		<script>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  	if (d.getElementById(id)) return;
-		  	js = d.createElement(s); js.id = id;
-		  	js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=261730517277070&version=v2.0";
-		  	fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
-		</script>
-		<!-- LinkedIN -->
-		<script src="//platform.linkedin.com/in.js" type="text/javascript">
-		  lang: en_US
-		</script>
-        <!--[if lt IE 7]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->			
-		<div id="fb-root"></div>		
-        <div id="page-wrap">
-            <!-- PAGE HEADER -->
-            <header>
-                <!-- MAIN NAV -->
-                <div class="container navbar navbar-default" role="navigation">
-                    <div class="row">
-                        <!-- LOGO & TOGGLE NAV -->
-                        <div class="col-md-2 navbar-header">
-                            <a class="navbar-brand" href="/"><img src="/images/logo-desktop.jpg" alt="Truth & Hope"></a>
-                            <div class="navbar-toggle-wrap">
-                                <a href="/" class="home-icon"><i class="fa fa-home" title="Home Page">&nbsp;</i></a>
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">          
-                                <span class="toggle-menu">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                </span>              
-                                </button>
-                            </div>
-                        </div>
-                        <!-- NAV -->
-                        <div class="col-md-10 collapse navbar-collapse">
-                            <!-- TOP NAV / SOC NET ICONS / DONATE BTN -->
-                            <div class="hidden-xs header-contact-info">
+	<script src="/scripts/vendor/jquery-1.10.2.min.js"></script>
+    <script src="/resources/bower_components/sprockets-modernizr/modernizr.js"></script>
+  </head>
+  <body>
+	<!-- Facebook -->
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=261730517277070&version=v2.0";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<!-- LinkedIN -->
+	<script src="//platform.linkedin.com/in.js" type="text/javascript">
+		lang: en_US
+	</script>
+    <!--[if lt IE 7]>
+    	<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->			
+	<div id="fb-root"></div>
+  	<!-- OFFCANVAS NAV -->
+    
+	@{ Html.RenderPartial("_MobileNavigation"); }
+
+    <div id="page-wrap" class="canvas home">
+      <!-- PAGE HEADER -->
+      <header>
+        <!-- MAIN NAV -->
+        <div class="container navbar navbar-default" role="navigation">
+          <div class="row">
+            <!-- LOGO & TOGGLE NAV -->
+            <div class="col-md-2 navbar-header">
+              <a class="navbar-brand" href="#"><img src="/images/logo-desktop.jpg" alt="Truth & Hope"></a>
+              <div class="navbar-toggle-wrap">
+                <a href="/" class="home-icon"><i class="fa fa-home" title="Home Page">&nbsp;</i></a>
+                <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".navmenu" data-canvas=".canvas">           
+                <span class="toggle-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </span>              
+                </button>
+              </div>
+            </div>
+            <!-- NAV -->
+            <div class="col-md-10 collapse navbar-collapse">
+              <!-- TOP NAV / SOC NET ICONS / DONATE BTN -->
+<div class="hidden-xs header-contact-info">
                                 <a class="donate-btn" target="_blank" href="http://www.givingfirst.org/index.cfm?fuseaction=Cart.New&Organization_ID=21391"><img src="/images/btn-donate-today.jpg" alt="Donate Today"></a>
                                 <div class="soc-net-icons">
                                     <a target="_blank" href="https://www.facebook.com/thirdwaycenter"><img src="/images/icon-fb.png" alt="TWC on Facebook"></a>
@@ -119,35 +105,24 @@ Layout = null;
 									@{ Html.RenderPartial("_LoginStatus");  }
 								</nav>
                             </div>
-                            <!-- LINKS -->                     	
-                            @{ Html.RenderPartial("_TopNavigation");  }
-                        </div>
-                    </div>
-                </div>
-            </header>
-            @RenderBody()
-
-            <!-- PAGE FOOTER -->           
-            <footer>
-                @{ Html.RenderPartial("_Footer");  }
-            </footer>
-        </div>	
-    	<script src="/resources/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="/scripts/vendor/fancybox/jquery.fancybox.js?v=2.1.5"></script>
-    	<script src="/scripts/min/plugins.min.js"></script> 
-    	<script src="/scripts/script.js"></script>
-		<script src="/scripts/site.js"></script>
-
-        <!-- Google Analytics -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-		@RenderSection(@Umbraco.Field("bodyScripts").ToString(), required: false)	
-
-    </body>
+              <!-- LINKS -->                     	
+			  @{ Html.RenderPartial("_TopNavigation");  }
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- CONTENT -->
+	  	@RenderBody()
+      <!-- PAGE FOOTER -->           
+      <footer>
+		@{ Html.RenderPartial("_Footer");  }
+      </footer>
+    </div>
+    <script src="/resources/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="/scripts/vendor/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+    <script src="/resources/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/resources/bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script>
+    <script src="/scripts/min/plugins.min.js"></script> 
+    <script src="/scripts/min/script.min.js"></script>
+  </body>
 </html>

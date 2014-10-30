@@ -1,0 +1,38 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	var root = CurrentPage.AncestorOrSelf(1);
+}
+
+<div class="navmenu navmenu-default navmenu-fixed-right">
+	<div class="navbar-header">
+		<p>Menu</p>
+	</div>
+	<ul class="nav navmenu-nav">
+		@foreach (var page in root.Children.Where("Visible"))
+		{
+		var current = page.IsAncestorOrSelf(CurrentPage) ? "active" : null;
+		var hasChildren = page.Children.Any() ? "dropdown" : null;
+		if(page.Children.Any() && page.Id != 1072 && page.Id != 1227)
+		{
+		<li class="dropdown" onclick="return true">
+			<a href="@page.Url" onclick="return true" class="@current dropdown-toggle" data-toggle="dropdown">@page.Name.Replace("<br>", "")</a>
+			<ul class="dropdown-menu navmenu-nav">
+				@{	
+				var navCollection = page.Children.Where("Visible").OrderBy("sortOrder");
+				foreach (var childPage in navCollection.OrderBy("sortOrder"))
+				{
+				<li>
+					<a href="@childPage.Url">@childPage.Name.Replace("<br>", "")</a>
+				</li>
+				}
+				}
+			</ul>
+		</li>
+		}
+		else
+		{
+		<li><a class="@current" href="@page.Url">@page.Name</a></li>
+		}
+		}
+	</ul>
+</div>
